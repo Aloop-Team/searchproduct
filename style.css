@@ -713,7 +713,7 @@ form span {
   }
 
   .jokla__related__section-box-el {
-      flex: 1 0 50%;
+      flex: 1 0 25%;
   }
 
   .jokla__related__section-box-el img {
