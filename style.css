@@ -694,7 +694,7 @@ form span {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .jokla__related {
       padding: 18px;
       margin: 0 0 60px 0;
@@ -713,7 +713,7 @@ form span {
   }
 
   .jokla__related__section-box-el {
-      flex: 1 0 25%;
+      flex: 1 0 50%;
   }
 
   .jokla__related__section-box-el img {
@@ -920,7 +920,7 @@ aside {
 }
 
 .jokla__footer-copyright {
-  margin-top: 2rem;
+  margin-top: 4rem;
   text-align: center;
   width: 100%;
 }
@@ -962,9 +962,9 @@ aside {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .jokla__footer {
-    padding: 20px 40px;
+    padding: 50px;
   }
   
   .jokla__footer-heading h1 {
