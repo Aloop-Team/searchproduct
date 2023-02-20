@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./css/styles.css" />
+    
     <title>Product page</title>
   </head>
 
@@ -99,7 +99,7 @@
     <!-- Product Details -->
     <section class="section product-detail">
       <div class="details container">
-        <div class="left image-container">
+        <div class="left image-container" id="grid__column">
           <div class="main">
             <img src="./img/furniture.png" />
           </div>
@@ -113,90 +113,153 @@
           </div>
 
         </div>
-        <div class="middle">
-          <span>Furniture / Chairs</span>
-          <h1>Executive Office Chair Nr 17 Ergonomic </h1>
-          
-          <div class="product__information">
 
-            <div class="product__information__numbers">
-
-              <div>
-                <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-regular fa-star"></i>
-              </div>
-              
-              <div>
-                <i class="fa-solid fa-circle"></i>
-              </div>
-              
-              <div class="product__information__reviews">
-                <i class="fa-sharp fa-solid fa-comment-dots"></i>
-                <p> <span id="product__reviews">32</span> reviews</p>
-              </div>
-              
-              <div>
-                <i class="fa-solid fa-circle"></i>
-              </div>
-
-              <div class="product__information__sold">
-                <i class="fa-sharp fa-solid fa-tag"></i>     
-                <p> <span id="product__sold">154</span> sold</p>
-              </div>
-
-            </div>
+          <div class="middle" id="grid__column">
+            <span class="in-stock"><i class="fa-solid fa-check"></i> In stock</span>
+            <h1>Executive Office Chair Nr 17 Ergonomic </h1>
             
-            <div class="price__pieces">
-
-              <div class="first__price">
-                <p>€ 98.00</p>
-                <span>50-100 pcs</span>
+            <div class="product__information">
+  
+              <div class="product__information__numbers">
+  
+                <div class="product__information__reviews">
+                  <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                
+                <div>
+                  <i class="fa-solid fa-circle"></i>
+                </div>
+                
+                <div class="product__information__reviews">
+                  <i class="fa-sharp fa-solid fa-comment-dots"></i>
+                  <span id="product__reviews">32</span>
+                  <p>reviews</p>
+                </div>
+                
+                <div>
+                  <i class="fa-solid fa-circle"></i>
+                </div>
+  
+                <div class="product__information__sold">
+                  <i class="fa-sharp fa-solid fa-tag"></i>   
+                  <span id="product__sold">154</span>  
+                  <p>sold</p>
+                </div>
+  
               </div>
-              <div class="divisor"></div>
-              <div class="price">
-                <p>€ 90.00</p>
-                <span>100-700 pcs</span>
+              
+              <div class="price__pieces">
+  
+                <div class="first__price">
+                  <p>€ 98.00</p>
+                  <span>50-100 pcs</span>
+                </div>
+                <div class="divisor"></div>
+                <div class="price">
+                  <p>€ 90.00</p>
+                  <span>100-700 pcs</span>
+                </div>
+                <div class="divisor"></div>
+                <div class="price">
+                  <p>€ 78.00</p>
+                  <span>+700 pcs</span>
+                </div>
+  
               </div>
-              <div class="divisor"></div>
-              <div class="price">
-                <p>€ 78.00</p>
-                <span>+700 pcs</span>
-              </div>
-
+              
             </div>
-            
-          </div>
 
-          <!-- <form>
-            <div>
-              <select>
-                <option value="Select Size" selected disabled>
-                  Select Size
-                </option>
-                <option value="1">32</option>
-                <option value="2">42</option>
-                <option value="3">52</option>
-                <option value="4">62</option>
-              </select>
-              <span><i class="bx bx-chevron-down"></i></span>
-            </div>
-          </form> -->
+                        
           <form class="form">
             <input type="text" placeholder="1" />
             <a href="cart.html" class="addCart">Add To Cart</a>
           </form>
-          <h3>Product Detail</h3>
-          <p class="product-detail-p">
-            Introducing our high-quality chairs, the perfect addition to any home or office! Our chairs are 
-            designed with both comfort and style in mind, ensuring that you can work, relax, or entertain guests 
-            for hours on end without any discomfort.
-            <br>
-            <br>
-            Constructed with premium materials, our chairs are durable and built to last. 
-            The sturdy frame provides reliable support, while the soft and plush seating ensures ultimate comfort. 
-          </p>
+
+          <div class="divisor"></div>
+
+          <div class="specifications_negotiable">
+            <h3>Price:</h3>
+            <p class="product-detail-p">Negotiable</p>
+          </div>
+
+          <div class="divisor"></div>
+
+          <div class="specifications_typematerialdesign">
+            
+            <div class="specifications">
+              <h3>Type:</h3>
+              <p class="product-detail-p">Classic chair</p>
+            </div>
+            <div class="specifications">
+              <h3>Material:</h3>
+              <p class="product-detail-p">Wood material</p>
+            </div>
+            <div class="specifications">
+              <h3>Design:</h3>
+              <p class="product-detail-p">Executive Office</p>
+            </div>
+
+          </div>
+
+          <div class="divisor"></div>
+
+          <div class="specifications_protection">
+            
+            <div class="specifications">
+              <h3>Customization:</h3>
+              <p class="product-detail-p">Customized logo and design custom packages</p>
+            </div>
+            <div class="specifications">
+              <h3>Protection:</h3>
+              <p class="product-detail-p">Refund Policy</p>
+            </div>
+            <div class="specifications">
+              <h3>Warranty:</h3>
+              <p class="product-detail-p">1 year full warranty</p>
+            </div>
+
+          </div>
+  
+        </div>
+                     
+        <div class="supplierbox" id="grid__column">
+
+          <div class="supplierbox__info">
+            <div class="supplier__name">
+              <img src="img/suppliersample.jpg" width="50px" height="50px">
+              <h3>Supplier <br> Chairs and CO.</h3>
+            </div>
+
+            <div class="divisor"></div>
+
+            <div class="supplier__location">
+              <img src="img/portugal.png" width="15px" height="20px">
+              <p>Porto, Portugal</p>
+            </div>
+
+            <div class="verified__status">
+              <img src="img/verified.png" width="15px" height="15px">
+              <p>Verified Seller</p>
+            </div>
+
+            <div class="shipping__where">
+              <img src="img/globe.png" width="15px" height="15px">
+              <p>Europe shipping</p>
+            </div>
+
+            <button class="send__inquiry">Send inquiry </button>
+
+            <button class="seller__profile">Seller's profile</button>
+
+          </div>
+         
+          <div class="supplier__save__forlater">
+            <i class="fa-regular fa-heart"></i>
+            <p>Save for later</p>
+          </div>
+
         </div>
 
-      </div>
     </section>
 
     <!-- Related -->
@@ -230,7 +293,8 @@
               <a href="productDetails.html">Executive Office Chair Nr 17 Ergonomic</a>
               <h4>€ 99.50</h4>
               <div class="box-staricon">
-                <i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+
               </div>
               
             </div>
@@ -252,7 +316,7 @@
                 <a href="productDetails.html">Executive Office Chair Nr 17 Ergonomic</a>
                 <h4>€ 99.50</h4>
                 <div class="box-staricon">
-                  <i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
                 </div>
               </div>
               <ul class="icons">
@@ -273,7 +337,8 @@
                 <a href="productDetails.html">Executive Office Chair Nr 17 Ergonomic</a>
                 <h4>€ 99.50</h4>
                 <div class="box-staricon">
-                  <i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+
                 </div>
                 
               </div>
@@ -295,7 +360,8 @@
                 <a href="productDetails.html">Executive Office Chair Nr 17 Ergonomic</a>
                 <h4>€ 99.50</h4>
                 <div class="box-staricon">
-                  <i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i><i class="bx bx-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+
                 </div>
               </div>
               <ul class="icons">
