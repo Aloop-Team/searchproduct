@@ -895,8 +895,9 @@ aside {
 
 .product-detail .left .main img {
   object-fit: cover;
-  height: 100%;
+  height: 750;
   width: 100%;
+  margin-top: 70px;
 }
 
 .select-productimg {
@@ -999,14 +1000,14 @@ aside {
   font-size: 14px;
   font-weight: 500;
   color: #8B96A5;
-  width: 35%;
+  width: 40%;
 }
 
 .product-detail-p {
   color: #505050;
   font-size: 14px;
   font-weight: 300;
-  width: 35%;
+  width: 40%;
   margin-bottom: 10px;
 }
 
@@ -1425,88 +1426,4 @@ form .form-input button {
 	border-radius: 0 36px 36px 0;
 	cursor: pointer;
 }
-
-/* Tab Settings */
-/* Tab Toggle Defaults */
-.oddbirds [id*="description"], .oddbirds [id*="reviews"], .oddbirds [id*="shipping"] {
-  position: absolute;
-  visibility: hidden;
-}
-
-/* Tab Content Defaults */
-.oddbirds [class*="description"], .oddbirds [class*="reviews"], .oddbirds [class*="shipping"] {
-  -moz-transition: opacity 300ms;
-  -o-transition: opacity 300ms;
-  -webkit-transition: opacity 300ms;
-  transition: opacity 300ms;
-  opacity: 0;
-  /* Hide */
-  float: left;
-  /* Isolation */
-  width: 100%;
-  /* Isolation */
-  margin-right: -100%;
-  /* Isolation */
-}
-
-.oddbirds [id*="description"]:checked ~ .content [class*="description"], .oddbirds [id*="reviews"]:checked ~ .content [class*="reviews"], .oddbirds [id*="shipping"]:checked ~ .content [class*="shipping"] {
-  opacity: 1;
-  /* Show */
-  position: relative;
-  /* Bring to top */
-  z-index: 10;
-  /* Bring to top */
-}
-
-.oddbirds [id*="description"]:checked ~ .tabs [for*="description"], .oddbirds [id*="reviews"]:checked ~ .tabs [for*="reviews"], .oddbirds [id*="shipping"]:checked ~ .tabs [for*="shipping"] {
-  background: none;
-  border-bottom-color: transparent;
-}
-
-/* Product description tab */
-
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.oddbirds {
-  border: 1px solid #dadadab6;
-  width: 80%;
-  max-width: 40em;
-  margin: 0 auto;
-  background: white;
-}
-
-.oddbirds [for] {
-  border-width: 0.0625em;
-  border-style: solid;
-  padding: 0.3125em;
-  float: left;
-  width: 33.33333%;
-  text-align: center;
-  background: white;
-}
-.oddbirds [for] ~ [for] {
-  border-left: 0;
-}
-.oddbirds [for]:last-child {
-  float: right;
-}
-
-.oddbirds .content {
-  overflow: hidden;
-  *zoom: 1;
-  border-width: 0.0625em;
-  border-style: solid;
-  padding: 0.6875em;
-  clear: both;
-  border-top: 0;
-}
-/* .content ul {
-  list-style: disc;
-  padding-left: 1.5em;
-} */
-
 
