@@ -503,7 +503,7 @@ Navigation
   }
 
   .product-thumb img {
-    height: 20rem;
+    height: 19rem;
   }
 
   .product-item {
@@ -521,6 +521,12 @@ Navigation
   .product-item .icons li {
     padding: 0.5rem 1rem;
     font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .product-thumb img {
+    height: 16rem;
   }
 }
 
@@ -1277,8 +1283,10 @@ aside {
 }
 
 .jokla__footer-links_logo h1 {
-  font-size: 40px;
+  font-size: 3em;
   color: var(--color-green);
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 .jokla__footer-links {
@@ -1289,7 +1297,7 @@ aside {
   flex-wrap: wrap;
   width: 100%;
   text-align: left;
-  margin: 15px 0;
+  margin: 15px;
 }
 
 .jokla__footer-links div {
@@ -1305,14 +1313,13 @@ aside {
 .jokla__footer-links_logo img {
   width: 118px;
   height: 30px;
-
   margin-bottom: 1rem;
 }
 
-.jokla__footer-links_logo p {
-
-  font-size: 12px;
-  line-height: 15px;
+.jokla__footer-links_logo .logo__p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
   color: #fff;
 }
 
@@ -1325,9 +1332,7 @@ aside {
 .jokla__footer-links_div h4 {
   font-size: 17px;
   line-height: 17px;
-  
   color: #fff;
-
   margin-bottom: 0.9rem;
 }
 
@@ -1368,8 +1373,11 @@ aside {
   }
 }
 
-@media screen and (max-width: 550px) {
-  .jokla__footer-heading h1 {
+@media screen and (max-width: 551px) {
+  .jokla__footer {
+    display: none;
+  }
+  /* .jokla__footer-links_logo h1 {
       font-size: 34px;
       line-height: 42px;
   }
@@ -1381,17 +1389,63 @@ aside {
   .jokla__footer-btn p {
       font-size: 14px;
       line-height: 20px;
-  }
+  } */
 }
 
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 450px) {
   .jokla__footer {
     padding: 50px;
   }
   
-  .jokla__footer-heading h1 {
-      font-size: 27px;
+  .jokla__footer-links h1 {
+      font-size: 3em;
       line-height: 38px;
+      margin-bottom: 20px;
+  }
+
+  .jokla__footer-links_logo .logo__p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+} */
+
+/*  Footer for mobile  */
+
+.jokla__mobile__footer {
+  display: none;
+}
+
+@media screen and (max-width: 551px) {
+
+  .jokla__mobile__footer {
+    display: block;
+    background-color: var(--blue);
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .jokla__mobile__footer h1,
+  .jokla__mobile__footer a,
+  .jokla__mobile__footer p {
+    text-align: center;
+  }
+
+  .jokla__mobile__footer h1 {
+    color: var(--color-green);
+    margin-bottom: 10px;
+  }
+
+  .jokla__mobile__footer a {
+    color: var(--white);
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .jokla__mobile__footer p {
+    color: var(--white);
+    font-size: 13px;
+    margin-top: 20px;
+    font-weight: 200;
   }
 }
 
