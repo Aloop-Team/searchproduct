@@ -1,6 +1,13 @@
+:root {
+  --white: #fff;
+  --black: #222;
+  --blue: #20364B;
+  --color-green: #65EBE4;
+}
+
 /* Login Form */
 .login-form {
-    padding: 5rem 0;
+    padding: 4rem 0;
     max-width: 50rem;
     margin: 5rem auto;
   }
@@ -11,9 +18,11 @@
   }
   
   .login-form form h1 {
+    font-size: 27px;
     margin-bottom: 1rem;
   }
   .login-form form p {
+    font-size: 14px;
     margin-bottom: 2rem;
   }
   
@@ -21,8 +30,9 @@
     margin-bottom: 1rem;
   }
   
-  .login-form form input {
-    border: 1px solid #ccc;
+  .login-form form input,
+  .continue_with_google {
+    border: 1px solid #dfdfdf;
     outline: none;
     padding: 1.5rem 0;
     text-indent: 1rem;
@@ -30,25 +40,49 @@
     margin-bottom: 2rem;
     border-radius: 0.5rem;
   }
+
+  .continue_with_google {
+    margin: 15px 0;
+    background-color: white;
+  }
   
   .login-form form input::placeholder {
     font-size: 1.6rem;
-    color: #222;
+    color: #939393;
   }
   
   .login-form form .buttons {
     margin-top: 1rem;
   }
   
-  .login-form form button {
+  .login-form form .signupbtn {
     outline: none;
     border: none;
     font-size: 1.6rem;
     padding: 1rem 3rem;
     margin-right: 1.5rem;
-    background-color: var(--green);
-    color: white;
+    background-color: var(--color-green);
+    color: var(--blue);
     cursor: pointer;
+    border-radius: 30px;
+  }
+
+  .login-form form .signupbtn:hover {
+    transform: scale(1.07);
+    transition: 0.3s ease;
+  }
+
+  .login-form form .cancelbtn {
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin-right: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #dfdfdf;
+    color: var(--blue);
+    cursor: pointer;
+    border-radius: 30px;
   }
   
   .login-form form p a {

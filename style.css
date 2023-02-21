@@ -915,8 +915,10 @@ aside {
   background-color: white;
 }
 
-.middle {
-  padding-left: 15px;
+@media screen and (min-width: 1000px) {
+  .middle {
+    padding-left: 15px;
+  } 
 }
 
 .product-detail .middle span {
