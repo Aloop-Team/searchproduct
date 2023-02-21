@@ -18,7 +18,10 @@ const descriptionContent = document.querySelector('#description_option_selected'
 const reviewsContent = document.querySelector('#reviews_option_selected');
 const shippingContent = document.querySelector('#shipping_option_selected');
 
-descriptionOption.addEventListener('click', function() {
+reviewsContent.style.display = 'none';
+shippingContent.style.display = 'none';
+
+  descriptionOption.addEventListener('click', function() {
   descriptionContent.style.display = 'block';
   reviewsContent.style.display = 'none';
   shippingContent.style.display = 'none';
@@ -26,9 +29,9 @@ descriptionOption.addEventListener('click', function() {
   descriptionOption.classList.add('description_option_selected');
   reviewsOption.classList.remove('reviews_option_selected');
   shippingOption.classList.remove('shipping_option_selected');
-});
+  });
 
-reviewsOption.addEventListener('click', function() {
+  reviewsOption.addEventListener('click', function() {
   descriptionContent.style.display = 'none';
   reviewsContent.style.display = 'block';
   shippingContent.style.display = 'none';
@@ -36,9 +39,9 @@ reviewsOption.addEventListener('click', function() {
   descriptionOption.classList.remove('description_option_selected');
   reviewsOption.classList.add('reviews_option_selected');
   shippingOption.classList.remove('shipping_option_selected');
-});
+  });
 
-shippingOption.addEventListener('click', function() {
+  shippingOption.addEventListener('click', function() {
   descriptionContent.style.display = 'none';
   reviewsContent.style.display = 'none';
   shippingContent.style.display = 'block';
@@ -46,4 +49,4 @@ shippingOption.addEventListener('click', function() {
   descriptionOption.classList.remove('description_option_selected');
   reviewsOption.classList.remove('reviews_option_selected');
   shippingOption.classList.add('shipping_option_selected');
-});
+  });

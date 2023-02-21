@@ -68,8 +68,24 @@
     }
 }
 
+@media only screen and (max-width: 392px) {
+  
+  .product-detail .left {
+    margin-bottom: 3em;
+  }
+}
+
+
+@media screen and (max-width: 365px) {
+  .product-detail .details {
+    padding: 10px;
+  }
+}
+
+/* Description Table */
+
 .description_table {
-    margin: 0 175px;
+    margin: 0 160px;
     display: flex;
     border: 1px solid #dadadab6;
     padding: 20px;

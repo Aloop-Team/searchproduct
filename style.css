@@ -1123,6 +1123,7 @@ aside {
 .supplier__save__forlater i {
   margin-top: 4px;
   color: var(--color-green);
+  cursor: pointer;
 }
 
 .supplierbox__info .divisor {
@@ -1247,8 +1248,12 @@ aside {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 411px) {
   
+  .in-stock {
+    margin: 10px 0 0;
+  }
+
   .fa-star,
   .fa-comment-dots,
   .fa-tag {
@@ -1266,10 +1271,20 @@ aside {
   .price {
     font-size: 1.7rem;
   }
+}
 
-  
+@media screen and (max-width: 391px) {
+
+  .in-stock {
+    margin: 0 0 10px;
+  }
+
+  .product-detail .middle h1 {
+    font-size: 2.2rem;
+  }
 
 }
+
 
 /* Footer */
 
