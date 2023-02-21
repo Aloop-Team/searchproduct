@@ -69,7 +69,7 @@
     outline: none;
     border: none;
     font-size: 1.6rem;
-    padding: 1rem 3rem;
+    padding: 1rem 6rem;
     margin-right: 1.5rem;
     background-color: var(--color-green);
     color: var(--blue);
@@ -88,7 +88,7 @@
     outline: none;
     border: none;
     font-size: 1.6rem;
-    padding: 1rem 3rem;
+    padding: 1rem 6rem;
     margin-right: 1.5rem;
     background-color: #ffffff;
     border: 1px solid #dfdfdf;
@@ -108,9 +108,11 @@
     }
   }
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 464px) {
     .login-form form .loginbtn,
-    .continue_with_google {
+    .continue_with_google,
+    .login-form form .signupbtn,
+    .login-form form .cancelbtn {
       width: 100%;
       margin: 10px auto;
     }
