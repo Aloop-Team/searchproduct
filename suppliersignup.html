@@ -101,10 +101,10 @@
       <div class="container">
         <div class="login-form">
           <form action="">
-            <h1>Login</h1>
+            <h1>Sign Up as a Supplier</h1>
             <p>
-              Don't have an account? 
-              <a href="register.html">Create one</a>
+              Please fill in this form to create an account. 
+              <!-- <a href="login.html">Login</a> -->
             </p>
   
             <label for="email">Email</label>
@@ -117,26 +117,24 @@
               name="psw"
               required
             />
-            
-
-            <label>
-              <input
-                type="checkbox"
-                checked="checked"
-                name="remember"
-                style="margin-bottom: 15px"
-              />
-              Remember me
-            </label>
   
-            <!-- <p>
+            <label for="psw-repeat">Repeat Password</label>
+            <input
+              type="password"
+              placeholder="Repeat Password"
+              name="psw-repeat"
+              required
+            />
+  
+            <p>
               By creating an account you agree to our
               <a href="#">Terms & Privacy</a>.
-            </p> -->
+            </p>
   
             <div class="buttons">
-              <button type="submit" class="loginbtn">Login</button>
-              <button class="continue_with_google"> <img src="img/google.png" width="15px"> Continue with Google</button>
+              <button type="submit" class="signupbtn">Sign Up</button>
+              <button class="continue_with_google"> <img src="img/google.png" width="15px"> Sign up with Google</button>
+              <!-- <button type="button" class="cancelbtn" id="cancelButton">Go Back</button> -->
 
             </div>
           </form>
@@ -190,6 +188,13 @@
 
 <!-- Custom Script -->
 <script src="index.js"></script>
+
+<script>
+  var cancelButton = document.getElementById("cancelButton");
+  cancelButton.addEventListener("click", function() {
+      window.location.href = "register.html";
+  });
+</script>
 
 </body>
 </html>

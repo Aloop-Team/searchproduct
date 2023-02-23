@@ -50,3 +50,6 @@ shippingContent.style.display = 'none';
   reviewsOption.classList.remove('reviews_option_selected');
   shippingOption.classList.add('shipping_option_selected');
   });
+
+
+  

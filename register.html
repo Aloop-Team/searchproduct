@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="loginsignup.css">
+    <link rel="stylesheet" href="buyersupplier.css">
     <title>Document</title>
 </head>
 <body>
@@ -96,59 +96,26 @@
         </div>
       </header>
 
-      <!-- Login section -->
+      <!-- Buyer or Supplier section -->
 
-      <div class="container">
-        <div class="login-form">
-          <form action="">
-            <h1>Sign Up</h1>
-            <p>
-              Please fill in this form to create an account. or
-              <a href="login.html">Login</a>
-            </p>
-  
-            <label for="email">Email</label>
-            <input type="text" placeholder="Enter Email" name="email" required />
-  
-            <label for="psw">Password</label>
-            <input
-              type="password"
-              placeholder="Enter Password"
-              name="psw"
-              required
-            />
-  
-            <label for="psw-repeat">Repeat Password</label>
-            <input
-              type="password"
-              placeholder="Repeat Password"
-              name="psw-repeat"
-              required
-            />
-  
-            <label>
-              <input
-                type="checkbox"
-                checked="checked"
-                name="remember"
-                style="margin-bottom: 15px"
-              />
-              Remember me
-            </label>
-  
-            <p>
-              By creating an account you agree to our
-              <a href="#">Terms & Privacy</a>.
-            </p>
-  
-            <div class="buttons">
-              <button type="submit" class="signupbtn">Sign Up</button>
-              <button type="button" class="cancelbtn">Cancel</button>
-
-            </div>
-          </form>
-        </div>
+      <section class="buyer-supplier">
+        <h1>Choose your account type:</h1>
+        
+        <div class="selectyourtype">
+          <a href="buyersignup.html">
+              <div class="buyeroption">
+                  <h3>Sign Up as a Buyer</h3>
+              </div>
+          </a>
+          <a href="suppliersignup.html">
+              <div class="supplieroption">
+                  <h3>Sign Up as a Supplier</h3>
+              </div>
+          </a>
       </div>
+      
+        
+      </section>
 
     <!--  MOBILE Footer -->
 

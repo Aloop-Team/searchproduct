@@ -101,6 +101,10 @@
     color: dodgerblue;
   }
   
+  /* .already-have-account {
+    font-size: 14px;
+    margin-top: 30px;
+  } */
 
   @media screen and (max-width: 500px) {
     .login-form {
