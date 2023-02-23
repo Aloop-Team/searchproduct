@@ -394,6 +394,14 @@ Navigation
   text-align: start;
 }
 
+.product-info .old-price {
+  color: #8B96A5;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
 .box-staricon {
   text-align: start;
   margin-top: 10px;
@@ -521,6 +529,10 @@ Navigation
   .product-item .icons li {
     padding: 0.5rem 1rem;
     font-size: 1.8rem;
+  }
+
+  .product-info .old-price {
+    font-size: 13px;
   }
 }
 
