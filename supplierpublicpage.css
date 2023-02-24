@@ -1,0 +1,129 @@
+:root {
+    --white: #fff;
+    --black: #222;
+    --blue: #20364B;
+    --color-green: #65EBE4;
+  }  
+
+/* Supplier Public Page (Bio) */
+
+.supplier-public-section {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.supplier-public-info,
+.supplier-public-reviews {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin: 4vh 12vw; */
+    background: white;
+    /* padding: 6vh 2vw; */
+    border-radius: 6px;
+    box-shadow: 0 0 6px 3px #7777770c;
+    padding: 4rem 0;
+    max-width: 113rem;
+    margin: 5rem auto;  
+}
+
+.supplier-public-info-name h2 {
+    font-size: 1.5vw;
+    margin-bottom: 12px;
+    color: #20364bb2;
+}
+
+.supplier-public-img img {
+    border-radius: 50%;
+}
+
+.supplier-public-bio {
+    display: flex;
+    margin-top: 5px;
+}
+
+.supplier-public-bio p {
+    margin-left: 10px;
+    color: #20364bb2;
+    font-size: 1.1vw;
+    margin-top: -2px;
+}
+
+.supplier-public-quotation {
+    border: 1px solid #D9D9D9;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    padding: 40px 35px;
+}
+
+.supplier-public-quotation button {
+    background: var(--color-green);
+    border: none;
+    color: var(--blue);
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.supplier-public-quotation p {
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: #20364bb2;
+}
+
+.fa-envelope {
+    margin-right: 5px;
+}
+
+/* Supplier Public Page (Reviews) */
+
+.reviews {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  #reviews-list {
+    margin-top: 20px;
+  }
+  
+  .review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .review p {
+    margin: 0;
+  }
+  
+  .review .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .review .rating {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .review .comment {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+
+  .supplier-select-category-filter {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+  }
+
+  .supplier-select-category-filter form {
+    margin-left: 15px;
+  }

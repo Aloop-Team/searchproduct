@@ -565,6 +565,7 @@ Navigation
   border: 1px solid #ccc;
   appearance: none;
   outline: none;
+  cursor: pointer;
 }
 
 /* @media only screen and (min-width: 1000px) {

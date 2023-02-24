@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-M8/47NVVbPw0uY7hlyzC8Wni7Vc+nNjnkE2Vj9W/XC8c5lQEmjwBzzyE5i5D5b5zs5r5r5X9rBhLJ8QQnbyVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="supplierpublicpage.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="navigation">
+          <div class="nav-center container d-flex">
+            <a href="index.html" class="jokla__logo"><h1>jokla</h1></a>
+    
+            <ul class="nav-list d-flex">
+              <li class="nav-item">
+                <a href="/" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">All Products</a>
+              </li>
+              
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+                 
+              
+              <li class="icons d-flex">
+  
+                  <form action="#">
+                    <div class="form-input">
+                      <input type="search" placeholder="Search...">
+                      <button type="submit" class="search-btn">
+                        <i class='bx bx-search' ></i>
+                      </button>
+                    </div>
+                  </form>
+                  
+                  <div class="icon">
+                    <i class="bx bx-message"></i>
+                  </div>
+                  
+                  <div class="icon">
+                    <i class="bx bx-heart"></i>
+                    <span class="d-flex">0</span>
+                  </div>
+                  <a href="cart.html" class="icon">
+                    <i class="bx bx-cart"></i>
+                    <span class="d-flex">0</span>
+                  </a>
+                  <a href="login.html" class="icon">
+                    <i class="bx bx-user"></i>
+                  </a>
+  
+              </li>
+            </ul>
+    
+            <div class="icons d-flex">
+              
+              <form action="#">
+                <div class="form-input">
+                  <input type="search" placeholder="Search...">
+                  <button type="submit" class="search-btn">
+                    <i class='bx bx-search' ></i>
+                  </button>
+                </div>
+              </form>
+  
+              <div class="icon">
+                
+                <a href="login.html" class="icon">
+                  <i class="bx bx-message"></i>
+                </a>
+                <i class="bx bx-heart"></i>
+                <span class="d-flex">0</span>
+              </div>
+              <a href="cart.html" class="icon">
+                <i class="bx bx-cart"></i>
+                <span class="d-flex">0</span>
+              </a>
+              <a href="login.html" class="icon">
+                <i class="bx bx-user"></i>
+              </a>
+    
+              </div>
+    
+            <div class="hamburger">
+              <i class="bx bx-menu-alt-left"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <!-- Supplier Public Page (Bio) -->
+
+    <section class="supplier-public-section">
+      <div class="supplier-public-info">
+        
+        <div class="supplier-public-img">
+          <img src="img/Leticia.jpg" width="170px">
+        </div>
+
+        <div class="supplier-public-info-box">
+
+          <div class="supplier-public-info-name">
+            <h2>Supplier <span class="supplier-name">Chairs and CO.</span></h2>
+          </div>
+
+          <div class="supplier-public-bio">
+              <div>
+                <img src="img/portugal.png" width="20px">
+              </div>
+              <div>
+                <p>Portugal</p>
+              </div>
+          </div>
+          
+          <div class="supplier-public-bio">
+            <div>
+              <img src="img/verified.png" width="20px">
+            </div>
+            <div>
+              <p>Verified Seller</p>
+            </div>
+          </div>
+
+          <div class="supplier-public-bio">
+            <div>
+              <img src="img/globe.png" width="20px">
+            </div>
+            <div>
+              <p>Europe Shipping</p>
+            </div>
+          </div>
+
+          <div class="supplier-public-bio">
+            <div>
+              <img src="img/nightstand.png" width="20px">
+            </div>
+            <div>
+              <p>Furniture Sector</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="supplier-public-quotation">
+          <p>Would you like a<br> personalized quotation?</p>
+          <button><i class="fa-solid fa-envelope"></i> Ask Quotation</button>
+        </div>
+
+      </div>
+    </section>  
+
+    <!-- Supplier Public Page (Review) -->
+
+    <section class="supplier-public-section">
+      <div class="supplier-public-reviews">
+        <div class="reviews">
+          <h2>Reviews</h2>
+          <form id="review-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+              <option value="">Select rating</option>
+              <option value="1">1 star</option>
+              <option value="2">2 stars</option>
+              <option value="3">3 stars</option>
+              <option value="4">4 stars</option>
+              <option value="5">5 stars</option>
+            </select>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          <div id="reviews-list"></div>
+        </div>
+        
+      </div>
+    </section>
+
+     <!-- All Products -->
+     <section class="products-and-pagination">
+      <section class="section all-products" id="products">
+        <div class="top container">
+          <h1 class="top-container">Seller's Products</h1>
+
+          <!-- <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+           -->
+
+           <div class="supplier-select-category-filter">
+            <form>
+              <select>
+                <option value="1">All Categories</option>
+                <option value="2">Category 1</option>
+                <option value="3">Category 2</option>
+                <option value="5">Category 3</option>
+              </select>
+              <span><i class="bx bx-chevron-down" id="downbox"></i></span>
+            </form>
+            <form>
+              <select>
+                <option value="1">Most Relevant</option>
+                <option value="2">By Price</option>
+                <option value="3">By Popularity</option>
+                <option value="5">By Rating</option>
+              </select>
+              <span><i class="bx bx-chevron-down" id="downbox"></i></span>
+            </form>
+           </div>
+          
+        </div>
+        <div class="product-center container">
+          <div class="product-item">
+            <div class="overlay">
+              <a href="productpage.html" class="product-thumb">
+                <img src="./img/furniture.png" alt="" />
+              </a>
+              <span class="discount">40%</span>
+            </div>
+            <div class="product-info">
+              <a href="productpage.html">Executive Office Chair Nr 17 Ergonomic</a>
+              <h4>€ 99.50 <span class="old-price">€ 130.99</span></h4> 
+              <div class="box-staricon">
+                <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              
+            </div>
+            <ul class="icons">
+              <li><i class="bx bx-heart"></i></li>
+              <li><i class="bx bx-search"></i></li>
+              <li><i class="bx bx-cart"></i></li>
+            </ul>
+          </div>
+          <div class="product-item">
+            <div class="overlay">
+              <a href="productpage.html" class="product-thumb">
+                <img src="./img/furniture.png" alt="" />
+              </a>
+              <span class="discount">40%</span>
+            </div>
+            <div class="product-info">
+              <a href="productpage.html">Executive Office Chair Nr 17 Ergonomic</a>
+              <h4>€ 99.50 <span class="old-price">€ 130.99</span></h4> 
+              <div class="box-staricon">
+                <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              
+            </div>
+            <ul class="icons">
+              <li><i class="bx bx-heart"></i></li>
+              <li><i class="bx bx-search"></i></li>
+              <li><i class="bx bx-cart"></i></li>
+            </ul>
+          </div>
+          <div class="product-item">
+              <div class="overlay">
+                <a href="productDetails.html" class="product-thumb">
+                  <img src="./img/furniture.png" alt="" />
+                </a>
+                
+              </div>
+              <div class="product-info">
+                <a href="productDetails.html">Executive Office Chair Nr 17 Ergonomic</a>
+                <h4>€ 99.50 <span class="old-price">€ 130.99</span></h4> 
+                <div class="box-staricon">
+                  <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+              <ul class="icons">
+                <li><i class="bx bx-heart"></i></li>
+                <li><i class="bx bx-search"></i></li>
+                <li><i class="bx bx-cart"></i></li>
+              </ul>
+            </div>
+            <div class="product-item">
+              <div class="overlay">
+                <a href="productDetails.html" class="product-thumb">
+                  <img src="./img/furniture.png" alt="" />
+                </a>
+                <span class="discount">40%</span>
+              </div>
+              <div class="product-info">
+                <a href="productDetails.html">Executive Office Chair Nr 17 Ergonomic</a>
+                <h4>€ 99.50 <span class="old-price">€ 130.99</span></h4> 
+                <div class="box-staricon">
+                  <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+              <ul class="icons">
+                <li><i class="bx bx-heart"></i></li>
+                <li><i class="bx bx-search"></i></li>
+                <li><i class="bx bx-cart"></i></li>
+              </ul>
+            </div>
+            <div class="product-item">
+              <div class="overlay">
+                <a href="productDetails.html" class="product-thumb">
+                  <img src="./img/furniture.png" alt="" />
+                </a>
+                
+              </div>
+              <div class="product-info">
+                <a href="productDetails.html">Executive Office Chair Nr 17 Ergonomic</a>
+                <h4>€ 99.50 <span class="old-price">€ 130.99</span></h4> 
+                <div class="box-staricon">
+                  <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+              <ul class="icons">
+                <li><i class="bx bx-heart"></i></li>
+                <li><i class="bx bx-search"></i></li>
+                <li><i class="bx bx-cart"></i></li>
+              </ul>
+            </div>
+            <div class="product-item">
+              <div class="overlay">
+                <a href="productDetails.html" class="product-thumb">
+                  <img src="./img/furniture.png" alt="" />
+                </a>
+                <span class="discount">40%</span>
+              </div>
+              <div class="product-info">
+                <a href="productDetails.html">Executive Office Chair Nr 17 Ergonomic</a>
+                <h4>€ 99.50 <span class="old-price">€ 130.99</span></h4> 
+                <div class="box-staricon">
+                  <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+              <ul class="icons">
+                <li><i class="bx bx-heart"></i></li>
+                <li><i class="bx bx-search"></i></li>
+                <li><i class="bx bx-cart"></i></li>
+              </ul>
+            </div>
+            <div class="product-item">
+              <div class="overlay">
+                <a href="productDetails.html" class="product-thumb">
+                  <img src="./img/furniture.png" alt="" />
+                </a>
+               
+              </div>
+              <div class="product-info">
+                <a href="productDetails.html">Executive Office Chair Nr 17 Ergonomic</a>
+                <h4>€ 99.50 <span class="old-price">€ 130.99</span></h4> 
+                <div class="box-staricon">
+                  <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+              <ul class="icons">
+                <li><i class="bx bx-heart"></i></li>
+                <li><i class="bx bx-search"></i></li>
+                <li><i class="bx bx-cart"></i></li>
+              </ul>
+            </div>
+            <div class="product-item">
+              <div class="overlay">
+                <a href="productDetails.html" class="product-thumb">
+                  <img src="./img/furniture.png" alt="" />
+                </a>
+                <span class="discount">40%</span>
+              </div>
+              <div class="product-info">
+                <a href="productDetails.html">Executive Office Chair Nr 17 Ergonomic</a>
+                <h4>€ 99.50 <span class="old-price">€ 130.99</span></h4> 
+                <div class="box-staricon">
+                  <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+              <ul class="icons">
+                <li><i class="bx bx-heart"></i></li>
+                <li><i class="bx bx-search"></i></li>
+                <li><i class="bx bx-cart"></i></li>
+              </ul>
+            </div>
+            
+        </div>
+      </section>
+      <section class="pagination">
+        <div class="container">
+          <span>1</span> <span>2</span> <span>3</span> <span>4</span>
+          <span><i class="bx bx-right-arrow-alt"></i></span>
+        </div>
+      </section>
+    </section>
+
+    <!--  MOBILE Footer -->
+
+    <footer class="jokla__mobile__footer">
+      <div>
+        <h1>jokla</h1>
+        <a href="#">Get in touch</a>
+      </div>
+      <div class="jokla__mobile-copyright">
+        <p>@2023 jokla. All rights reserved.</p>
+      </div>
+    </footer>
+
+      <!-- Footer -->
+    <footer class="jokla__footer">
+    
+        <div class="jokla__footer-links">
+          <div class="jokla__footer-links_logo">
+            <h1>jokla</h1>
+            <p class='logo__p'>A marketplace designed to <br/> facilitate the buying and selling<br/> process between companies.</p>
+          </div>
+          <div class="jokla__footer-links_div">
+            <h4>Links</h4>
+            <p>Social Media</p>
+            <p>Top Categories</p>
+            <p>Suppliers</p>
+          </div>
+          <div class="jokla__footer-links_div">
+            <h4>Company</h4>
+            <p>Terms & Conditions </p>
+            <p>Shipping guide</p>
+            <p>Contact</p>
+          </div>
+          <div class="jokla__footer-links_div">
+            <h4>Get in touch</h4>
+            <p>XYZ Road, Building 1, Porto, Portugal.</p>
+            <p>+351 222 222 222 </p>
+            <p>info@jokla.pt</p>
+          </div>
+        </div>
+    
+        <div class="jokla__footer-copyright">
+          <p>@2023 jokla. All rights reserved.</p>
+        </div>
+</footer>
+
+<!-- Custom Script -->
+<script src="supplierpublic.js"></script>
+
+</body>
+</html>

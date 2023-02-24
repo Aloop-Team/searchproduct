@@ -85,7 +85,8 @@
 /* Description Table */
 
 .description_table {
-    margin: 0 160px;
+    margin: 0 auto;
+    max-width: 120rem;
     display: flex;
     border: 1px solid #dadadab6;
     padding: 20px;
