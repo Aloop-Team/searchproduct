@@ -3,6 +3,7 @@
     --black: #222;
     --blue: #20364B;
     --color-green: #65EBE4;
+    --font-color: #20364bb2;
   }  
 
 /* Supplier Public Page (Bio) */
@@ -18,9 +19,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* margin: 4vh 12vw; */
     background: white;
-    /* padding: 6vh 2vw; */
     border-radius: 6px;
     box-shadow: 0 0 6px 3px #7777770c;
     padding: 4rem 0;
@@ -80,7 +79,77 @@
     margin-right: 5px;
 }
 
-/* Supplier Public Page (Reviews) */
+/*  Suppliers (Reviews)  */ 
+  
+.supplier-reviews {
+  padding: 4vw ;
+  max-width: 113rem;
+  margin: 5rem auto;
+  box-shadow: 0 0 6px 3px #7777770c;
+  border-radius: 6px;
+  background-color: var(--white);
+}
+
+.supplier-reviews .heading {
+  font-size: 1.5vw;
+  color: var(--font-color);
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.supplier-reviews .heading,
+.supplier-reviews span {
+  margin-bottom: 15px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.supplier-reviews .fa {
+  font-size: 1.3vw;
+  color: var(--font-color);
+}
+
+.supplier-reviews .checked {
+  color: #FF9017;
+  
+}
+
+.reviews-element-side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.reviews-element-middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+.reviews-element-right {
+  text-align: right;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+.bar-5 {width: 60%; height: 18px; background-color: #20364B;}
+.bar-4 {width: 30%; height: 18px; background-color: #20364bb0;}
+.bar-3 {width: 10%; height: 18px; background-color: #20364b7f;}
+.bar-2 {width: 4%; height: 18px; background-color: #20364b64;}
+.bar-1 {width: 15%; height: 18px; background-color: #20364b24;}
 
 .reviews {
     margin: 20px;
@@ -117,6 +186,44 @@
     margin-left: 10px;
     vertical-align: middle;
   }
+  
+  .supplierpage-write-review button {
+    padding: 1rem;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--color-green);
+    font-weight: 500;
+    font-size: 1.2vw;
+    width: 17%;
+    cursor: pointer;
+    margin-top: 7px;
+  }
+
+  .supplierpage-write-review button:hover {
+    transform: scale(1.06);
+    transition: 0.3s ease;
+  }
+
+@media screen and (max-width: 1150px) {
+  .supplier-public-info, 
+  .supplier-reviews {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  
+  .right {
+    display: none;
+  }
+}
+
+  /* Supplier's products */
 
   .supplier-select-category-filter {
     display: flex;
@@ -127,3 +234,6 @@
   .supplier-select-category-filter form {
     margin-left: 15px;
   }
+
+
+ 
