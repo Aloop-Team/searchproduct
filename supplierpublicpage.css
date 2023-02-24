@@ -187,12 +187,11 @@ hr {
     vertical-align: middle;
   }
   
-  .supplierpage-write-review button {
+  .supplierpage-write-review #review-button,
+  .supplierpage-write-review #review-button-submit {
     padding: 1rem;
     border-radius: 30px;
     border: none;
-    background-color: var(--blue);
-    color: var(--color-green);
     font-weight: 500;
     font-size: 1.2vw;
     width: 17%;
@@ -200,8 +199,67 @@ hr {
     margin-top: 7px;
   }
 
-  .supplierpage-write-review button:hover {
+  .supplierpage-write-review #review-button {
+    background-color: var(--blue);
+    color: var(--color-green);
+  }
+
+  .supplierpage-write-review #review-button-submit {
+    background-color: #EFF2F4;
+    color: var(--font-color);
+  }
+
+  .supplierpage-write-review #review-button:hover,
+  .supplierpage-write-review #review-button-submit:hover {
     transform: scale(1.06);
+    transition: 0.3s ease;
+  }
+
+  .form-write-review {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-write-review label {
+    font-size: 1.1vw;
+    margin: 0.3em 0 0.5em 0;
+  }
+  
+  .form-write-review select,
+  .form-write-review textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 0.25em;
+    border: 1px solid #ccc;
+  }
+  
+  .form-write-review select:focus,
+  .form-write-review textarea:focus {
+    outline: none;
+    border-color: var(--color-green);
+  }
+  
+  .form-write-review button[type="submit-review"] {
+    background-color: var(--color-green);
+    color: var(--blue);
+    border: none;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 1.1vw;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .form-write-review button[type="submit-review"]:hover {
+    background-color: var(--blue);
+    color: var(--color-green);
+    transform: scale(1.05);
     transition: 0.3s ease;
   }
 

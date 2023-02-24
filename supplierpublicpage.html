@@ -234,8 +234,27 @@
         <hr style="border:1px solid #f1f1f1">
 
         <div class="supplierpage-write-review">
-          <button>Write a review</button>
+
+          <button id="review-button">Write a review</button>
+          <div id="review-form" style="display: none;">
+            
+            <form class="form-write-review">
+              <label for="rating">Rating:</label>
+              <select id="rating" name="rating">
+                <option value="5">5 stars</option>
+                <option value="4">4 stars</option>
+                <option value="3">3 stars</option>
+                <option value="2">2 stars</option>
+                <option value="1">1 star</option>
+              </select>
+              <label for="review">Write your review:</label>
+              <textarea id="review" name="review"></textarea>
+              <button type="submit-review">Submit review</button>
+            </form>
+              
+          </div>
         </div>
+        
 
     </section>
 
