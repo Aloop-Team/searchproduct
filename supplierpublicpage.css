@@ -336,7 +336,7 @@ hr {
   color: var(--color-green);
 }
 
-
+/* Mobile responsivity */
 
 @media screen and (max-width: 1150px) {
   .supplier-public-info, 

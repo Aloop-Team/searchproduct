@@ -94,22 +94,19 @@
     background-color: white;
   }
   
-  .description_table h4 {
+  .description_table h3 {
     font-weight: 500;
     border: 1px solid #dadadab6;
     padding: 5px 15px;
     border-radius: 5px;
     margin-right: 5px;
     cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
   }
   
   .description_option {
     display: flex;
-  }
-
-  .description_div p {
-    margin-left: 2.2px;
-    margin-top: 20px;
   }
 
   @media screen and (max-width: 730px) {
@@ -130,3 +127,86 @@
     }
   }
 
+  
+/* Review section */
+
+.product-reviews {
+  padding: 2vw;
+  max-width: 113rem;
+  margin: 0 0 0 15rem;
+  border-radius: 6px;
+  background-color: var(--white);
+}
+
+.product-reviews .heading {
+  font-size: 1.5vw;
+  color: var(--font-color);
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.product-reviews .heading,
+.product-reviews span {
+  margin-bottom: 15px;
+}
+
+  .product-write-review #review-button,
+  .product-write-review #review-button-submit {
+    padding: 1rem;
+    border-radius: 30px;
+    border: none;
+    font-weight: 500;
+    font-size: 1.2vw;
+    width: 20%;
+    cursor: pointer;
+    margin-top: 7px;
+  }
+
+  .product-write-review #review-button {
+    background-color: var(--blue);
+    color: var(--color-green);
+  }
+
+  .product-write-review #review-button-submit {
+    background-color: #EFF2F4;
+    color: var(--font-color);
+  }
+
+  .product-write-review #review-button:hover,
+  .product-write-review #review-button-submit:hover {
+    transform: scale(1.06);
+    transition: 0.3s ease;
+  }
+
+@media screen and (max-width: 1200px) {
+  .product-reviews {
+    margin: auto;
+  }
+}
+
+
+/* Supplier review pagination*/
+
+.product-review-pagination {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0 0;
+}
+
+
+.product-review-pagination span {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border: 1px solid var(--green);
+  font-size: 1vw;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  border-radius: 4px;
+}
+
+.product-review-pagination span:hover {
+  border: 1px solid var(--green);
+  background-color: var(--green);
+  color: var(--color-green);
+}

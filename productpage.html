@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="productpage.css">
+    <link rel="stylesheet" href="supplierpublicpage.css">
     <title>Product page</title>
   </head>
 
@@ -269,12 +270,12 @@
       <div class="description_table">
         <div class="description_div">
           <div class="description_option">
-            <h4 class="description_option_selected">Description</h4>
-            <h4 class="reviews_option_selected">Reviews</h4>
-            <h4 class="shipping_option_selected">Shipping</h4>
+            <h3 class="description_option_selected">Description</h3>
+            <h3 class="reviews_option_selected">Reviews</h3>
+            <h3 class="shipping_option_selected">Shipping</h3>
            
           </div>
-          <p id="description_option_selected">
+          <div id="description_option_selected">
             Introducing our high-quality chairs, the perfect addition to any home or office! Our chairs are designed 
             with both comfort and style in mind, ensuring that you can work, relax, or entertain guests for hours on 
             end without any discomfort.
@@ -283,13 +284,157 @@
             support, while the soft and plush seating ensures ultimate comfort. Our chairs come in a range of colors and styles, 
             allowing you to choose the perfect match for your space and personal taste.
 
-          </p>
-          <p id="reviews_option_selected">
-            Reviews
-          </p>
-          <p id="shipping_option_selected">
+          </div>
+          <div id="reviews_option_selected">
+            
+            <!-- (Review section) -->
+
+            <section class="product-reviews">
+
+              <span class="heading">Product Reviews</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p> <b>4.1</b> average based on <b>254</b> reviews.</p>
+                <hr style="border:1px solid #f1f1f1">
+
+                <div class="row">
+                  
+                  <div class="reviews-element-side">
+                    <div>5 stars</div>
+                  </div>
+                  <div class="reviews-element-middle">
+                    <div class="bar-container">
+                      <div class="bar-5"></div>
+                    </div>
+                  </div>
+                  <div class="reviews-element-side reviews-element-right">
+                    <div>150</div>
+                  </div>
+                  <div class="reviews-element-side">
+                    <div>4 stars</div>
+                  </div>
+                  <div class="reviews-element-middle">
+                    <div class="bar-container">
+                      <div class="bar-4"></div>
+                    </div>
+                  </div>
+                  <div class="reviews-element-side reviews-element-right">
+                    <div>63</div>
+                  </div>
+                  <div class="reviews-element-side">
+                    <div>3 stars</div>
+                  </div>
+                  <div class="reviews-element-middle">
+                    <div class="bar-container">
+                      <div class="bar-3"></div>
+                    </div>
+                  </div>
+                  <div class="reviews-element-side reviews-element-right">
+                    <div>15</div>
+                  </div>
+                  <div class="reviews-element-side">
+                    <div>2 stars</div>
+                  </div>
+                  <div class="reviews-element-middle">
+                    <div class="bar-container">
+                      <div class="bar-2"></div>
+                    </div>
+                  </div>
+                  <div class="reviews-element-side reviews-element-right">
+                    <div>6</div>
+                  </div>
+                  <div class="reviews-element-side">
+                    <div>1 star</div>
+                  </div>
+                  <div class="reviews-element-middle">
+                    <div class="bar-container">
+                      <div class="bar-1"></div>
+                    </div>
+                  </div>
+                  <div class="reviews-element-side reviews-element-right">
+                    <div>20</div>
+                  </div>
+
+                </div>
+
+                <hr style="border:1px solid #f1f1f1">
+
+                <div class="product-write-review">
+                  <button id="review-button">Write a review</button>
+                  <div id="review-form" style="display: none;">
+                    
+                    <form class="form-write-review">
+
+                      <label for="rating">Rating:</label>
+                      <select id="rating" name="rating">
+                        <option value="5">5 stars</option>
+                        <option value="4">4 stars</option>
+                        <option value="3">3 stars</option>
+                        <option value="2">2 stars</option>
+                        <option value="1">1 star</option>
+                      </select>
+
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name">
+
+                      <label for="review">Write your review:</label>
+                      <textarea id="review" name="review"></textarea>
+                      <button type="submit-review">Submit review</button>
+                      
+                    </form>
+
+                  </div>
+                </div>
+
+                <div class="customer-review-submitted">
+                  <div class="customer-review">
+                      <h4 class="customer-review-h4">John Doe</h4>
+                      <p class="customer-review-p1"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p>
+                      <p class="customer-review-p2">"Great product! I'm very satisfied with my purchase."</p>
+                  </div>
+                  
+                  <div class="customer-review">
+                    <h4 class="customer-review-h4">Jane Smith</h4>
+                      <p class="customer-review-p1"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></p>
+                    <p class="customer-review-p2">"Good quality, but a bit expensive."</p>
+                  </div>
+                  
+                  <div class="customer-review">
+                    <h4 class="customer-review-h4">Bob Marley</h4>
+                      <p class="customer-review-p1"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></p>
+                    <p class="customer-review-p2">"Product was okay, but could be better."</p>
+                  </div>
+                  
+                  <div class="customer-review">
+                    <h4 class="customer-review-h4">Sara Brown</h4>
+                      <p class="customer-review-p1"><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></p>
+                    <p class="customer-review-p2">"Not very happy with my purchase. Product didn't meet my expectations."</p>
+                  </div>
+                  
+                  <div class="customer-review">
+                    <h4 class="customer-review-h4">Myke Ross</h4>
+                      <p class="customer-review-p1"><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></p>
+                    <p class="customer-review-p2">"Terrible product! Waste of money."</p>
+                  </div>
+                  
+                </div>
+                
+                <section class="product-review-pagination">
+                  <div class="container">
+                    <span>1</span> <span>2</span> <span>3</span> <span>4</span>
+                    <span><i class="bx bx-right-arrow-alt"></i></span>
+                  </div>
+                </section>
+
+            </section>
+
+          </div>
+          <div id="shipping_option_selected">
             Shipping
-          </p>
+          </div>
     
         </div>
       </div>
@@ -454,6 +599,7 @@
 
     <!-- Custom Script -->
     <script src="index.js"></script>
-    
+    <script src="supplierpublic.js"></script>
+
   </body>
 </html>
