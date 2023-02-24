@@ -52,4 +52,9 @@ shippingContent.style.display = 'none';
   });
 
 
-  
+  /* Redirect to supplier public page */ 
+
+  const sellerProfileButton = document.getElementById('sellerProfileButton');
+  sellerProfileButton.addEventListener('click', () => {
+  window.location.href = 'supplierpublicpage.html';
+});

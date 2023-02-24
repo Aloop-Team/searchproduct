@@ -62,11 +62,17 @@
     border: none;
     color: var(--blue);
     font-size: 1vw;
-    font-weight: 600;
+    font-weight: 500;
     padding: 12px 20px;
     border-radius: 30px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+.supplier-public-quotation button:hover {
+  
+  transform: scale(1.05);
+  transition: 0.3s ease;
 }
 
 .supplier-public-quotation p {
