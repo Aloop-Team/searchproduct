@@ -1,8 +1,50 @@
+///////////////////////////// Favorite MOBILE///////////////////////
+
+var mobileFavorite = document.querySelector('#mobile-favorite-icon')
+var favorite = document.querySelector('#favorite')
+var closeFavorite = document.querySelector('#close-favorite')
+
+mobileFavorite.onclick = () => {
+  favorite.classList.add("active");
+}
+
+closeFavorite.onclick = () => {
+  favorite.classList.remove('active');
+}
+
+///////////////////////////// Cart MOBILE///////////////////////
+
+var mobileCart = document.querySelector('#mobile-cart-icon')
+var cart = document.querySelector('#cart')
+var closeCart = document.querySelector('#close-cart')
+
+mobileCart.onclick = () => {
+  cart.classList.add("active");
+}
+
+closeCart.onclick = () => {
+  cart.classList.remove('active');
+}
+
+//////////////////////////// Favorite Section //////////////////////////////
+
+var favoriteIcon = document.querySelector('#favorite-icon')
+var favorite = document.querySelector('#favorite')
+var closeFavorite = document.querySelector('#close-favorite')
+
+favoriteIcon.onclick = () => {
+  favorite.classList.add("active");
+}
+
+closeFavorite.onclick = () => {
+  favorite.classList.remove('active'); 
+} 
+ 
 //////////////////////////// Cart Section //////////////////////////////
 
-let cartIcon = document.querySelector('#cart-icon')
-let cart = document.querySelector('#cart')
-let closeCart = document.querySelector('#close-cart')
+var cartIcon = document.querySelector('#cart-icon')
+var cart = document.querySelector('#cart')
+var closeCart = document.querySelector('#close-cart')
 
 cartIcon.onclick = () => {
   cart.classList.add("active");

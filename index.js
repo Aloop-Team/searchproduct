@@ -1,12 +1,35 @@
-const hamburer = document.querySelector(".hamburger");
-const navList = document.querySelector(".nav-list");
+////////////////////////////// Nav-list ////////////////////////////////////
 
-if (hamburer) {
-  hamburer.addEventListener("click", () => {
+const hamburger = document.querySelector(".hamburger");
+const navList = document.querySelector(".nav-list");
+const icons = document.querySelectorAll(".icon");
+const navigation = document.querySelector(".navigation");
+
+if (hamburger) {
+  hamburger.addEventListener("click", () => {
     navList.classList.toggle("open");
   });
 }
 
+// fechar nav-list automaticamente ao clicar fora
+document.addEventListener("click", (event) => {
+  if (!navigation.contains(event.target)) {
+    navList.classList.remove("open");
+  }
+});
+
+// adicionar event listener para cada ícone da barra de navegação
+icons.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    navList.classList.remove("open");
+    if (icon.classList.contains("bx-message")) {
+    } else if (icon.classList.contains("bx-heart")) {
+    } else if (icon.classList.contains("bx-cart")) {
+    } else if (icon.classList.contains("bx-user")) {
+      window.location.href = "login.html";
+    }
+  });
+});
 
 
 //////////////////////////// Product page - content table ////////////////////////////////////////////////////
