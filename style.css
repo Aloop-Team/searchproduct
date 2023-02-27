@@ -227,7 +227,7 @@ Navigation
   position: fixed;
   top: 0;
   right: -150%; 
-  width: 415px;
+  width: 450px;
   min-height: 100vh;
   padding: 20px;
   background: white;
@@ -281,6 +281,15 @@ Navigation
   cursor: pointer;
   color: var(--blue);
   font-weight: 600;
+}
+
+@media screen and (max-width: 451px) {
+  #favorite {
+    width: 100%;
+  }
+  .favorite-img {
+    width: 115px;
+  }
 }
 
 /* Cart section */
@@ -404,6 +413,16 @@ Navigation
   cursor: pointer;
   color: var(--blue);
   font-weight: 600;
+}
+
+@media screen and (max-width: 451px) {
+  #cart {
+    width: 100%;
+  }
+
+  .cart-img {
+    width: 115px;
+  }
 }
 
 /* Category Section */
