@@ -109,6 +109,27 @@
     display: flex;
   }
 
+  .description_option_table_selected {
+    border-collapse: collapse;
+    width: 65%;
+    margin: 25px 0;
+  }
+  
+  .description_option_table_selected th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .description_option_table_selected th {
+    background-color: #f2f2f2;
+  }
+  
+  .description_option_table_selected .info {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
   @media screen and (max-width: 730px) {
     .description_table {
       margin: 0 25px;
