@@ -1,0 +1,55 @@
+:root {
+    --white: #fff;
+    --black: #222;
+    --green: #20364B;
+    --blue: #20364B;
+    --grey1: #f0f0f0;
+    --gray2: #F8F8FB;
+    --color-green: #65EBE4;
+    --global-padding: 25px 125px;
+  }
+  
+.offer-thumb img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: all 500ms linear;
+    margin: 0 auto;
+    display: block;
+    padding: 15px;
+}
+
+.background-green-thumb,
+.background-green2-thumb,
+.background-blue-thumb,
+.background-orange-thumb,
+.background-yellow-thumb,
+.background-red-thumb 
+{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.background-green-thumb {
+    background-color: #65eb8d7b;
+}
+
+.background-green2-thumb {
+    background-color: #35f4ea85;
+}
+
+.background-blue-thumb {
+    background-color: #3582c96e;
+}
+
+.background-orange-thumb {
+    background-color: rgba(235, 170, 48, 0.416);
+}
+
+.background-yellow-thumb {
+    background-color: rgba(232, 232, 42, 0.452);
+}
+
+.background-red-thumb {
+    background-color: rgba(254, 60, 60, 0.463);
+}
