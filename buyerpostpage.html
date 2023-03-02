@@ -385,7 +385,7 @@
     <section class="products-and-pagination">
       <section class="section all-products" id="products">
         <div class="top container">
-          <h1 class="top-container">All Customers Posts</h1>
+          <h1 class="top-container">All Buyers Posts</h1>
 
           <!-- <div class="search-container">
             <input type="text" placeholder="Search...">
@@ -404,6 +404,11 @@
         </div>
         <div class="product-center container">
           <div class="product-item">
+            <h3 class="post-customer-name">Guilherme Santos</h3>
+            <h4 class="post-customer-title">Customer's Post Title asfasc</h4>
+            <p class="post-customer-description product-description">Lorem ipsum dolor sit amet sit consectetur adipisicing elit. 
+              Dignissimos similique eum harum iste obcaecati non est, soluta, labore quis suscipit 
+              explicabo maiores expedita repudiandae. Vel enim labore commodi veniam modi?</p>
             <div class="background-green2-thumb">
               <a href="#" class="offer-thumb">
                 <img src="./img/offer.png" alt="" />
@@ -411,19 +416,23 @@
               
             </div>
             <div class="product-info">
-              <a href="#">Executive Office Chair Nr 17 Ergonomic</a>
-              <h4>€ 99.50 </h4> 
+              <!-- <a href="#">Executive Office Chair Nr 17 Ergonomic</a> -->
+              <h4>Budget Range:<span>€ 99.50</span></h4>
+              <h4>Quantity Range:<span>10</span><span>-</span><span>99</span></h4>
+              <h4>Location:<span>Portugal</span></h4>
+              <h4>Deadline:<span>01/04</span><span>-</span><span>10/04</span></h4>
               <div class="box-staricon">
               </div>
               
             </div>
-            <!-- <ul class="icons">
-              <li><i class="bx bx-heart"></i></li>
-              <li><i class="bx bx-search"></i></li>
-              <li><i class="bx bx-cart"></i></li>
-            </ul> -->
+           
           </div>
           <div class="product-item">
+            <h3 class="post-customer-name">Guilherme Santos</h3>
+            <h4 class="post-customer-title">Customer's Post Title asfasc</h4>
+            <p class="post-customer-description product-description">Lorem ipsum dolor sit amet sit consectetur adipisicing elit. 
+              Dignissimos similique eum harum iste obcaecati non est, soluta, labore quis suscipit 
+              explicabo maiores expedita repudiandae. Vel enim labore commodi veniam modi?</p>
             <div class="background-red-thumb">
               <a href="#" class="offer-thumb">
                 <img src="./img/food.png" alt="" />
@@ -431,8 +440,11 @@
              
             </div>
             <div class="product-info">
-              <a href="#">Executive Office Chair Nr 17 Ergonomic</a>
-              <h4>€ 99.50 </h4> 
+              <!-- <a href="#">Executive Office Chair Nr 17 Ergonomic</a> -->
+              <h4>Budget Range:<span>€ 99.50</span></h4>
+              <h4>Quantity Range:<span>10</span><span>-</span><span>99</span></h4>
+              <h4>Location:<span>Portugal</span></h4>
+              <h4>Deadline:<span>01/04</span><span>-</span><span>10/04</span></h4>
               <div class="box-staricon">
               </div>
               
@@ -445,6 +457,7 @@
           </div>
           <div class="product-item">
               <div class="background-yellow-thumb">
+                
                 <a href="#" class="offer-thumb">
                   <img src="./img/beverages.png" alt="" />
                 </a>
@@ -703,5 +716,26 @@
     <!-- Custom Script -->
     <script src="./index.js"></script>
     <script src="cart.js"></script>
+
+    <script>
+      var productDescription = [...document.getElementsByClassName("product-description")];
+      productDescription.forEach(element => {
+        
+        var words = element.textContent.trim().split(" ");
+        if (words.length > 10) {
+            var shortenedDescription = words.slice(0, 10).join(" ") + "...";
+            element.textContent = shortenedDescription;
+            var button = document.createElement("button");
+            button.textContent = "Ver mais";
+            button.onclick = function() {
+              element.textContent = words.join(" ");
+              button.style.display = "none";
+            }
+            element.insertAdjacentElement("afterend", button);
+         }
+
+      });
+    </script>
+
   </body>
 </html>
