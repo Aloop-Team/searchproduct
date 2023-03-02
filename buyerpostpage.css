@@ -8,8 +8,6 @@
     --color-green: #65EBE4;
     --global-padding: 25px 125px;
   }
-  
-  
 
   .buyerpost-center.container {
     display: flex;
@@ -30,6 +28,10 @@
 
     .section .top {
         margin-bottom: 2.5rem;
+      }
+
+      .container {
+        padding: 0 2rem;
       }
   }
   
@@ -54,6 +56,7 @@
     text-align: center;
     text-decoration: underline;
     text-transform: uppercase;
+    margin: 7px 0;
 } 
 
 
@@ -184,3 +187,26 @@ button {
 .post-info i {
     margin-right: 10px;
 }
+
+.send-budget-tobuyer {
+    margin-top: 30px;
+} 
+
+.send-budget-tobuyer:hover  {
+    transition: 0.4s;
+    transform: scale(1.06);
+} 
+
+.send-budget-btn {
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    padding: 10px 60px;
+    border-radius: 30px;
+}
+
+.send-budget-btn:hover {
+    border: 1px solid #2cb4ad;
+    color: #2cb4ad;
+} 
+

@@ -573,7 +573,7 @@ Navigation
   margin-bottom: 1rem;
 }
 
-.product-info a {
+.product-info-title { 
   font-size: 1.7rem;
   display: block;
   margin-bottom: 1rem;
@@ -589,10 +589,6 @@ Navigation
   margin-top: 10px;
   text-align: start;
   color: #20364B;
-}
-
-.product-info a:hover {
-  color: var(--green);
 }
 
 .product-info span {
