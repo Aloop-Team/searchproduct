@@ -193,20 +193,19 @@ button {
 } 
 
 .send-budget-tobuyer:hover  {
-    transition: 0.4s;
+    transition: 0.4s ease-out;
     transform: scale(1.06);
 } 
 
 .send-budget-btn {
-    background-color: transparent;
-    border: 1px solid var(--blue);
+    box-shadow: 1px 3px 3px 0px #a1a1a14c;
     color: var(--blue);
     padding: 3% 18%;
     border-radius: 30px;
+    background: #6083a40a;
 }
 
 .send-budget-btn:hover {
-    border: 1px solid #2cb4ad;
-    color: #2cb4ad;
+    background: #b8dee260;
+    box-shadow: none;
 } 
-

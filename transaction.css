@@ -1,0 +1,277 @@
+:root {
+    --white: #fff;
+    --black: #222;
+    --green: #20364B;
+    --blue: #20364B;
+    --grey1: #f0f0f0;
+    --gray2: #F8F8FB;
+    --color-green: #65EBE4;
+    --global-padding: 25px 125px;
+  }
+
+.transaction-section {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 7% 8%;
+    gap: 3%;
+}
+
+/* ---------- Shipping Address ---------- */
+
+.transaction-shipping-address,
+.transaction-order-summary {
+    border-radius: 10px;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.15));
+    padding: 4%;
+}
+
+.transaction-shipping-address {
+    flex: 57%;
+    background-color: #F1F1F6;
+}
+
+.shipping-address-info {
+    margin-bottom: 30px;
+}
+
+.transaction-shipping-address h2,
+.transaction-order-summary h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #20364BCC;
+}
+
+.transaction-shipping-address h4,
+.transaction-order-summary h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #6E7A85;
+}
+
+.transaction-shipping-address span {
+    color: rgba(255, 0, 0, 0.578);
+}
+
+.shipping-address-input {
+    height: 55px;
+}
+
+.shipping-address-info textarea {
+    height: 100px;
+}
+
+::placeholder {
+    color: #c1c7cab0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.shipping-address-input,
+.shipping-address-info textarea {
+    border: none;
+    outline: none;
+    filter: drop-shadow(0px 2px 2px rgba(172, 172, 172, 0.15));
+    padding: 2.5%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.shipping-address-input:hover {
+    outline: 1px solid var(--color-green);
+}
+
+.box-divisor {
+    border: 1px solid #6e7a8531;
+    margin: 60px 0 45px;
+}
+
+@media screen and (max-width: 1247px) {
+    .transaction-shipping-address h2,
+    .transaction-order-summary h2 {
+        font-size: 25px;
+    }
+
+    .transaction-shipping-address h4,
+    .transaction-order-summary h4 {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 974px) {
+    .transaction-shipping-address h2,
+    .transaction-order-summary h2 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .transaction-shipping-address h4,
+    .transaction-order-summary h4 {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    .transaction-section {
+        display: block;
+    }
+
+    .transaction-shipping-address,
+    .transaction-order-summary {
+        margin-bottom: 50px;
+    }
+
+}
+
+/* ---------- Shipping methods ---------- */
+
+.shipping-methods {
+    margin-top: -15px;
+}
+
+.shipping-option {
+    margin-bottom: 7px;
+}
+
+.shipping-option label {
+    margin-left: 10px;
+    color: #6E7A85;
+}
+
+.place-order-btn {
+    background-color: var(--color-green);
+    color: var(--blue);
+    display: block;
+    margin: 8% 30% 4%;
+    text-align: center;
+    padding: 11px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.182));
+}
+
+.place-order-btn:hover {
+    transform: scale(1.06);
+    transition: 0.5s ease-out;
+}
+
+/* ---------- Order Summary ---------- */
+
+.transaction-order-summary {
+    flex: 37%;
+    background-color: #FFFFFF;
+}
+
+.order-cost-row,
+.order-cost-row-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    align-items: center;
+}
+
+.order-cost-row h5 {
+    color: #20364b93;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.order-cost-row span {
+    color: #20364BCC;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.order-cost-row-total {
+    margin-top: 35px;
+}
+
+.order-cost-row-total h6 {
+    color: #20364B99;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.order-cost-row-total h3 {
+    color: #20364B;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.box-divisor-2 {
+    border: 1px solid #6e7a8531;
+    margin: 40px 0;
+}
+
+.order-summary-products {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.summary-product-img-box-category1 {
+    background-color: #E0FBFA;
+}
+
+.summary-product-img-box-category2 {
+    background-color: #FFECEB;
+}
+
+.summary-product-img-box-category3 {
+    background-color: #FDFDEC;
+}
+
+.summary-product-img-box-category1,
+.summary-product-img-box-category2,
+.summary-product-img-box-category3 {
+    width: 70%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.summary-product-img-box-category1 img,
+.summary-product-img-box-category2 img,
+.summary-product-img-box-category3 img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.summary-product-info-box {
+    display: block;
+}
+
+.product-transaction-name {
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.product-transaction-name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.product-transaction-price {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.number-of-products {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 770px) {
+    .order-cost-row-total h3 {
+        font-size: 22px;
+    }
+}
