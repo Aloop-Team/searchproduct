@@ -172,6 +172,8 @@
 .transaction-order-summary {
     flex: 37%;
     background-color: #FFFFFF;
+    max-height: 950px; 
+    overflow-y: auto; 
 }
 
 .order-cost-row,
