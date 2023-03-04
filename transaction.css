@@ -104,8 +104,9 @@
 @media screen and (max-width: 974px) {
     .transaction-shipping-address h2,
     .transaction-order-summary h2 {
-        font-size: 22px;
+        font-size: 24px;
         font-weight: 700;
+        margin: 20px 0;
     }
 
     .transaction-shipping-address h4,
@@ -117,7 +118,13 @@
 
 @media screen and (max-width: 769px) {
     .transaction-section {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        margin: 7% 4%;
+    }
+
+    .transaction-shipping-address {
+        order: 2;
     }
 
     .transaction-shipping-address,
@@ -146,7 +153,7 @@
     background-color: var(--color-green);
     color: var(--blue);
     display: block;
-    margin: 8% 30% 4%;
+    margin: 8% 15% 4%;
     text-align: center;
     padding: 11px;
     border-radius: 30px;
@@ -275,3 +282,22 @@
         font-size: 22px;
     }
 }
+
+@media screen and (max-width: 470px) {
+    .shipping-option label {
+       font-size: 15px;
+    }
+
+    .place-order-btn {
+        margin: 10% 15% 8%;
+     }
+
+     .shipping-methods {
+        margin-top: 15px;
+    }
+
+    .box-divisor {
+        margin: 40px 0;
+    }
+}
+
