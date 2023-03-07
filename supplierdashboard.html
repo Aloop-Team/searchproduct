@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="supplierdashboard.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- sidebar -->
+
+    <section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-code'></i>
+			<span class="text">jokla</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="productsdashboard.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Products</span>
+				</a>
+			</li>
+			<li>
+				<a href="salesdashboard.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Sales</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Team</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-store'></i>
+					<span class="text">Catalogue</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+    <!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<!-- <input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label> -->
+			
+			<a href="#" class="profile">
+				<img src="img/aloop.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+        <main>
+            
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					
+				</div>
+				
+				<div class="dashboard__filters">
+					<select id="ver-todos">
+						<option value="todos">Today</option>
+						<option value="7 dias">Last 7 days</option>
+						<option value="30 dias">Last 30 days</option>
+						<option value="All time">All time</option>
+					</select>
+					<select id="ver-todos">
+						<option value="todos">All Products</option>
+						<option value="ativos">Ativos</option>
+						<option value="inativos">Inativos</option>
+						<option value="inativos">Excluídos</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="dashboard-data">
+				<div class="dashboard-data-col1">
+					<div class="analytics-box">
+						<canvas id="myChart"></canvas>
+					</div>
+					<div class="mostviewed-box">
+						<div class="text-box">
+							<img src="img/bar-chart.png" width="27px" height="27px">
+						</div>
+						<div class="text-box">
+							<h3>Most Viewd Products</h3>
+							<p>0 %</p>
+						</div>
+					</div>
+					<div class="refund-box">
+						<div class="text-box">
+							<img src="img/back.png" width="27px" height="27px">
+						</div>
+						<div class="text-box">
+							<h3>Refund</h3>
+							<p>3 %</p>
+						</div>
+					</div>
+				</div>
+				<div class="dashboard-data-col2">
+					<div class="sales-box">
+						<div class="text-box">
+							<img src="img/fund.png" width="32px" height="32px">
+						</div>
+						<div class="text-box">
+							<h3>Sales</h3>
+							<p>120</p>
+						</div>
+					</div>
+					<div class="netvalue-box">
+						<div class="text-box">
+							<img src="img/dollar-symbol.png" width="27px" height="27px">
+						</div>
+						<div class="text-box">
+							<h3>Net Value</h3>
+							<p>€ 1,000.00</p>
+						</div>
+					</div>
+					
+					<div class="numberofvisits-box">
+						<div class="text-box">
+							<img src="img/global.png" width="27px" height="27px">
+						</div>
+						<div class="text-box">
+							<h3>Number Of Visits</h3>
+							<p>1110</p>
+						</div>
+					</div>
+					<div class="approved-box">
+						<div class="text-box">
+							<img src="img/checked.png" width="27px" height="27px">
+						</div>
+						<div class="text-box">
+							<h3>Approved</h3>
+							<p>97 %</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+    <script src="supplierdashboard.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="graph.js"></script>
+	
+</body>
+</html>
