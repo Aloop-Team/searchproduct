@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="supplierdashboard.css">
-    <link rel="stylesheet" href="suppliersettingsdashboard.css">
+    <link rel="stylesheet" href="postdashboard.css">
     <title>Document</title>
 </head>
 <body>
@@ -38,7 +38,7 @@
 					<span class="text">Posts</span>
 				</a>
 			</li>
-			<li> 
+			<li>
 				<a href="salesdashboard.html">
 					<i class='bx bxs-doughnut-chart' ></i>
 					<span class="text">Sales</span>
@@ -62,7 +62,7 @@
 					<span class="text">Manage Chat</span>
 				</a>
 			</li>
-			<li >
+			<li>
 				<a href="suppliersettingsdashboard.html">
 					<i class='bx bxs-cog' ></i>
 					<span class="text">Settings</span>
@@ -84,7 +84,7 @@
 	<section id="content">
 		<!-- NAVBAR -->
 		<nav>
-			<i class='bx bx-menu'></i>
+			<i class='bx bx-menu' ></i>
 			
 			<form action="#">
 				<div class="form-input">
@@ -101,100 +101,90 @@
 		</nav>
 		<!-- NAVBAR -->
 
-        <section class="settings-dashboard-section">
             
-            <div class="settings-title">
-                <h2>Settings</h2>
-            </div>
+	<div class="head-title">
+		<div class="left">
+			<h1>Your Posts</h1>
+					
+		</div>
+					
+	</div>
 
-            <div class="settings-infobox">
-                
-                <div class="supplier_infobox-1">
-                    <div class="supplier_namebox">
-                        <img src="img/Leticia.jpg">
-                        <p>Leticia Lima S.A.</p>
-                    </div>
+    <section class="post-dashboard">
+  
+      <table>
+        <thead>
+          <tr>
+              <th>DATE</th>
+              <th>TITLE</th>
+              <th>STATUS</th>
+              <th>CATEGORY</th>
+              <th>PRICE</th>
+              <th>QUANTITY</th>
+              <th></th>
+          </tr>
+        </thead> 
+          
+        <tr>
+          <td>01/01/2023 at 11:00</td>
+          <td>Product 1</td>
+          <td> <span class="active">Active</span> </td>
+          <td>Category Name</td>
+          <td>€1000.00</td>
+          <td>100 pieces</td>
+          <td> <img src="img/more.png" alt=""></td>
+        </tr>
+        <tr>
+          <td>01/01/2023 at 11:00</td>
+          <td>Product 1</td>
+          <td> <span class="active">Active</span> </td>
+          <td>Category Name</td>
+          <td>€1000.00</td>
+          <td>100 pieces</td>
+          <td> <img src="img/more.png" alt=""></td>
+        </tr>
+        <tr>
+          <td>01/01/2023 at 11:00</td>
+          <td>Product 1</td>
+          <td> <span class="inactive">Inactive</span> </td>
+          <td>Category Name</td>
+          <td>€1000.00</td>
+          <td>100 pieces</td>
+          <td> <img src="img/more.png" alt=""></td>
+        </tr>
+        <tr>
+          <td>01/01/2023 at 11:00</td>
+          <td>Product 1</td>
+          <td> <span class="active">Active</span> </td>
+          <td>Category Name</td>
+          <td>€1000.00</td>
+          <td>100 pieces</td>
+          <td> <img src="img/more.png" alt=""></td>
+        </tr>
+        <tr>
+          <td>01/01/2023 at 11:00</td>
+          <td>Product 1</td>
+          <td> <span class="active">Active</span> </td>
+          <td>Category Name</td>
+          <td>€1000.00</td>
+          <td>100 pieces</td>
+          <td> <img src="img/more.png" alt=""></td>
+        </tr>
+        <tr>
+          <td>01/01/2023 at 11:00</td>
+          <td>Product 1</td>
+          <td> <span class="active">Active</span> </td>
+          <td>Category Name</td>
+          <td>€1000.00</td>
+          <td>100 pieces</td>
+          <td> <img src="img/more.png" alt=""></td>
+        </tr>
+        
+      </table>
 
-                    <div class="settings-divisor"></div>
-
-                    <div class="supplier_verifiedbox">
-                        <img src="img/verified.png">
-                        <p>Verified Profile</p>
-                    </div>
-
-                    <div class="settings-divisor"></div>
-
-                    <div class="supplier_countrybox">
-                        <img src="img/portugal.png">
-                        <p>Portugal</p>
-                    </div>
-                </div>
-
-                <div class="supplier_infobox-2">
-                    
-                    <i class='bx bx-user'></i>
-                    
-                    <div>
-                        <h3>Profile Information</h3>
-                        <p>Manage Your Company's Data</p>
-                    </div>
-
-                    <i class='bx bx-chevron-right' ></i>
-                    
-                </div>
-
-                <div class="supplier_infobox-3">
-                    
-                    <i class='bx bxs-lock'></i>
-                    
-                    <div>
-                        <h3>Security</h3>
-                        <p>Increase Your Account Protection</p>
-                    </div>
-                    
-                    <i class='bx bx-chevron-right' ></i>
-                    
-                </div>
-
-                <div class="supplier_infobox-4">
-                    
-                    <i class='bx bxs-package' ></i>
-
-                    <div>
-                        <h3>Profile Information</h3>
-                        <p>Configure Your Shipping Methods</p>
-                    </div>
-                    
-                    <i class='bx bx-chevron-right' ></i>
-                    
-                </div>
-
-                <div class="supplier_infobox-5">
-                    
-                    <i class='bx bxs-bank'></i>
-
-                    <div>
-                        <h3>Bank Information</h3>
-                        <p>Manage Your Bank Information</p>
-                    </div>
-                   
-                    <i class='bx bx-chevron-right' ></i>
-                    
-                </div>
-
-            </div>
-
-            
-
-        </section>
-
-		<!-- MAIN -->
-	</section>
-
-	<!-- CONTENT -->
-    <script src="supplierdashboard.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<script src="graph.js"></script>
 	
+	</section>
+	
+    <script src="supplierdashboard.js"></script>
 </body>
 </html>

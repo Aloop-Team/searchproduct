@@ -2,11 +2,16 @@
     margin: 30px 50px;
 }
 
+.return-product i {
+    margin-right: 10px;
+}
+
 .return-product a {
     color: #20364B;
     background: #65ebe4;
     border-radius: 5px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .offers_page_setup {

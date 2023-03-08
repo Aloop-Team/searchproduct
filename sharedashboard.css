@@ -1,0 +1,27 @@
+.settings-share-section {
+    margin: 30px 50px;
+}
+
+.share-title h2 {
+    color: #20364b;
+}
+
+.share-input {
+    margin-top: 20px;
+}
+
+.share-input i {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.share-input button {
+    border: 1px solid #77777729;
+    outline: none;
+    height: 40px;
+    width: 40%;
+    padding: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
