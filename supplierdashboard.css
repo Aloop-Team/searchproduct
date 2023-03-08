@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -15,7 +16,7 @@ li {
 }
 
 :root {
-	--poppins: 'Poppins', sans-serif;
+
 	--lato: 'Lato', sans-serif;
 
 	--white: #FFFFFF;
@@ -26,7 +27,7 @@ li {
 	--grey: #F8F8FB;
 	--dark-grey: #AAAAAA;
 	--dark: #342E37;
-	--red: #DB504A;
+
 	--yellow: #FFCE26;
 	--light-yellow: #FFF2C6;
 	--orange: #FD7238;
@@ -160,7 +161,7 @@ body {
 	transition: width .3s ease;
 }
 #sidebar .side-menu li a.logout {
-	color: var(--red);
+	color: rgb(227, 77, 77);
 }
 #sidebar .side-menu.top li a:hover {
 	color: var(--green);
@@ -275,7 +276,7 @@ body {
 	height: 20px;
 	border-radius: 50%;
 	border: 2px solid var(--light);
-	background: var(--red);
+	background: rgb(227, 77, 77);
 	color: var(--light);
 	font-weight: 700;
 	font-size: 12px;

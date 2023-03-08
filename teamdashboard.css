@@ -1,149 +1,106 @@
-.padding {
-    padding: 0 25px;
+.team-title {
+    margin: 40px 25px;
 }
-.sales__box {
-    background-color: white;
-    padding: 13px;
-    margin-top: 30px;
-    border-radius: 6px;
-}  
-  
-.flow__box__filter {
+
+.team-title h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #20354B;
+}
+
+.search-and-addcontributor {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 0px 0px rgba(198, 198, 198, 0.233);
 }
 
 .search-box {
     position: relative;
-    display: inline-block;
-  }
-  
-  .search-box input {
-    height: 40px;
-    border-radius: 7px;
-  }
+    display: inline-flex;
+}
 
-  .search-box input[type="text"] {
-    padding-right: 30px; 
+.search-box input {
+    height: 40px;
+    width: 200px;
+    border-radius: 7px;
+}
+
+.search-box input[type="text"] {
+    padding-left: 10px; 
     box-sizing: border-box; 
     border: 1px solid #ccc; 
     outline: none;
-  }
-  
-  .search-box i {
+}
+
+.search-box i {
     position: absolute;
     top: 50%;
     right: 10px; 
     transform: translateY(-50%); 
     font-size: 18px; 
     color: #888; 
-    pointer-events: none; 
     background-size: 18px; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    
-  }
-
-.input__buscar {
-    height: 40px;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    outline: none;
-    border: none;
-    padding: 0 10px;
-    box-shadow: 0 0 2px 1px #9a9a9a39;
 }
 
-input::placeholder {
-    padding: 0 10px;
-    font-size: 15px;
-    color: #9a9a9a;
-}
-
-.flow__box__filter select {
-    height: 40px;
+.addcontributor {
+    padding: 12px 20px;
+    background-color: #65EBE4;
     border-radius: 6px;
     cursor: pointer;
 }
 
-/* sales found and net price  */
-
-.sales-numbers-values {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 0;
+.addcontributor:hover {
+    transform: scale(1.04);
+    transition: 0.3s ease-out;
 }
 
-.sales-found,
-.net-price {
+.search-and-addcontributor a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Invitation filter */
+
+.invitation-filter {
     background-color: white;
-    flex: 1;
-    width: 50%;
-    /* border: 1px solid #E3E3E3; */
-    border-radius: 5px;
-    padding: 20px 25px;
-    box-shadow: 0 0 10px 5px #e3e3e335;
-}
-
-.net-price {
-    margin: 0 0 0 25px;
-}
-
-.sales-found h2,
-.net-price h2 {
-    font-size: 22px;
-    font-weight: 400;
-    color: #777777;
-    margin-bottom: 5px;
-}
-
-.sales-found p,
-.net-price p {
-    font-size: 18px;
-    font-weight: 700;
-    color: #777777;
-}
-
-/* All approved */
-
-.all-approved {
-    background-color: white;
-    padding: 15px 55px;
+    padding: 15px 50px;
     display: flex;
     align-items: center;
     color: var(--color-blue);
-    
+    margin: 30px 0 0;
     gap: 25px;
     box-shadow: 0px 2px 0px 0px rgba(198, 198, 198, 0.233);
 }
 
-.all-approved h3 {
+.invitation-filter h3 {
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
 }
 
-.paid {
-    color: #20364b;
+.active {
+    color: black;
     padding: 6px 12px;
     background-color: #65ebe483;
     border-radius: 4px;
-    font-size: 14px;
     cursor: pointer;
 }
 
 .pendent {
     color: white;
-    font-size: 14px;
-    padding: 6px 12px;
     background-color: #e1a852a3;
+    padding: 6px 12px;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.cancelled {
+.inactive {
     color: white;
-    font-size: 14px;
     padding: 6px 12px;
     background-color: rgba(184, 43, 43, 0.759);
     border-radius: 4px;
@@ -204,9 +161,3 @@ img {
     cursor: pointer;
 }
 
-
-@media screen and (min-width: 1200px) {
-    td img {
-    margin-left: 50%;
-    }
-}

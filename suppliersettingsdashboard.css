@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.settings-title h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #20354B;
+}
+
+.settings-title  {
+    margin: 40px 20px;
+}
+
+.settings-infobox {
+    margin: 0 12%;
+}
+
+.supplier_infobox-1{
+    display: flex;
+    margin: 0 auto;
+    background: white;
+    padding: 3%;
+    border-radius: 7px;
+    border: 1px solid #0000001d;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.supplier_infobox-1 p {
+    font-size: 20px;
+    color: #20364bb5;
+    font-weight: 600;
+}
+
+.supplier_namebox img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.supplier_verifiedbox img,
+.supplier_countrybox img {
+    width: 32px;
+    height: 32px;
+}
+
+.supplier_namebox,
+.supplier_verifiedbox,
+.supplier_countrybox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.settings-divisor {
+    border: 1px solid #77777723;
+    margin: 0 30px;
+}
+
+.supplier_infobox-2,
+.supplier_infobox-3,
+.supplier_infobox-4,
+.supplier_infobox-5 {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 2.5%;
+    border-radius: 7px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.supplier_infobox-2:hover,
+.supplier_infobox-3:hover,
+.supplier_infobox-4:hover,
+.supplier_infobox-5:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease-in;
+}
+
+.supplier_infobox-2 .bx-user,
+.supplier_infobox-3 .bxs-lock,
+.supplier_infobox-4 .bxs-package,
+.supplier_infobox-5 .bxs-bank {
+    margin-right: 22px;
+}
+
+.supplier_infobox-2 div,
+.supplier_infobox-3 div,
+.supplier_infobox-4 div,
+.supplier_infobox-5 div {
+    flex: 10%;
+}
+
+.supplier_infobox-2 div p,
+.supplier_infobox-3 div p,
+.supplier_infobox-4 div p,
+.supplier_infobox-5 div p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #5b616ece;
+}
+
+.bxs-lock,
+.bxs-package,
+.bxs-bank,
+.bx-user {
+    font-size: 40px;
+    color: #8b96a5be;
+}   
+
+.bx-chevron-right {
+    font-size: 25px;
+    color: #8B96A5;
+}
+
+.supplier_infobox-2 h3, 
+.supplier_infobox-3 h3, 
+.supplier_infobox-4 h3,
+.supplier_infobox-5 h3 {
+    color: #20364b98;
+    font-weight: 600;
+}
