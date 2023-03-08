@@ -1,0 +1,52 @@
+.create-product {
+    margin: 35px 25px;
+    /* display: flex; */
+}
+
+.create-product-inputs {
+    flex: 50%;
+}
+
+.choose-product-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-input-label {
+    width: 25%;
+}
+
+.product-input-label label {
+    color: #626c74bc;
+    font-size: 18px;
+}
+
+.choose-product-input select,
+.choose-product-input input
+ {
+    margin-left: 15px;
+    padding: 8px;
+    outline: none;
+}
+
+.choose-product-input select {
+    border: 1px solid #7777774f;
+    border-radius: 5px;
+}
+
+.choose-product-input textarea {
+    height: 5vh;
+    margin-left: 15px;
+    border: 1px solid #7777774f;
+    border-radius: 5px;
+}
+
+
+.choose-product-input input {
+    border: 1px solid #7777774f;
+    border-radius: 5px;
+}
+
+
+
