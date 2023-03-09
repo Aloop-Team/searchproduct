@@ -57,7 +57,7 @@
     padding: 0 10px;
     box-shadow: 0 0 2px 1px #9a9a9a39;
 }
-
+ 
 input::placeholder {
     padding: 0 10px;
     font-size: 15px;
@@ -144,30 +144,27 @@ tr {
 }
 
 .table-image-more {
-    width: 10%;
+    width: 11%;
     cursor: pointer;
 }
        
-        .enabled {
-            color: black;
-            padding: 6px 12px;
-            background-color: #65ebe483;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
+.enabled, .disabled {
+    padding: 6px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 90px; /* or any desired width */
+}
 
-        }
+.enabled {
+    color: #20354B;
+    background-color: #65ebe483;
+}
 
-        .disabled {
-            color: white;
-            padding: 6px 12px;
-            background-color: var(--red);
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-
-        }
-
+.disabled {
+    color: white;
+    background-color: var(--red);
+}
         
 
 @media screen and (min-width: 1200px) {

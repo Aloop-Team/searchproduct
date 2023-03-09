@@ -128,3 +128,42 @@
     color: #20364b98;
     font-weight: 600;
 }
+
+.infobox-2-expand {
+    display: none;
+  }
+  
+.infobox-2-expand.show {
+    display: block;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 5%);
+}
+
+.infobox-2-divs {
+    background-color: white;
+    margin: -15px 0 20px;
+    padding: 30px 30px 15px;
+    border-radius: 7px;
+    color: #5b616e75;
+}
+
+.data-label {
+    color: #5b616ece;
+}
+
+.infobox-divisor {
+    border: 0.5px solid #5b616e2a;
+    margin: 10px 0;
+}
+
+.infobox-2-username,
+.infobox-2-email,
+.infobox-2-telephone,
+.infobox-2-mobilephone,
+.infobox-2-razaosocial,
+.infobox-2-nif {
+    display: grid;
+    grid-template-columns: 35% 60% 5%;
+}
+
+
+

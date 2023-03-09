@@ -1,7 +1,22 @@
+.head-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px 0;
+}
+
 .head-title h2 {
     color: #20364b;
-    padding: 40px 30px 0;
     font-size: 30px;
+    font-weight: 600; 
+}
+
+.head-title .btn-download {
+    color: #20364b;
+    background-color: #65ebe4;
+    height: 45px;
+    padding: 10px 15px;
+    border-radius: 7px;
     font-weight: 600;
 }
 

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="supplierdashboard.css">
+    <link rel="stylesheet" href="createproduct.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- sidebar -->
+
+    <section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-code'></i>
+			<span class="text">jokla</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="supplierdashboard.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="productsdashboard.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Products</span>
+				</a>
+			</li>
+			<li>
+				<a href="postdashboard.html">
+					<i class='bx bx-edit-alt'></i>
+					<span class="text">Posts</span>
+				</a>
+			</li>
+			<li>
+				<a href="salesdashboard.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Sales</span>
+				</a>
+			</li>
+			<li>
+				<a href="teamdashboard.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Team</span>
+				</a>
+			</li>
+			<li>
+				<a href="sharedashboard.html">
+					<i class='bx bxs-share-alt'></i>
+					<span class="text">Share</span>
+				</a>
+			</li>
+			<li>
+				<a href="chatdashboard.html">
+					<i class='bx bxs-comment-dots'></i>
+					<span class="text">Manage Chat</span>
+				</a>
+			</li>
+			<li>
+				<a href="suppliersettingsdashboard.html">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+    <!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<!-- <input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label> -->
+			
+			<a href="#" class="profile">
+				<img src="img/aloop.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+            
+        <!-- Create product section -->
+         
+            <div class="return-product">
+              <a href="productsdashboard.html"><i class='bx bx-arrow-back'></i>Return to products</a>
+            </div>
+
+            <section class="offers_page_setup">
+
+                <div class="offers_page_setup_box">
+                  <h2>Edit Product</h2>
+                    <div class="offer_title">
+                        <h3>Title *</h3>
+                        <input type="text" placeholder="Write a title for your product" required>
+                    </div>
+                    <div class="offer_img">
+                      <h3>Image</h3>
+                      <p>Choose the best photos to describe what you wish.</p>
+                      <div class="offer_img_grid">
+                          <div class="offer_first_img">
+                            <p>Add image</p>
+                          </div>
+                          <div class="offer_img_others">
+                            <i class='bx bxs-camera-plus'></i>
+                          </div>
+                          <div class="offer_img_others">
+                            <i class='bx bxs-camera-plus'></i>
+                          </div>
+                          <div class="offer_img_others">
+                            <i class='bx bxs-camera-plus'></i>
+                          </div>
+                          <div class="offer_img_others">
+                            <i class='bx bxs-camera-plus'></i>
+                          </div>
+                          <div class="offer_img_others">
+                            <i class='bx bxs-camera-plus'></i>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="offer_description">
+                        <h3>Description *</h3>
+                        <textarea placeholder="Describe what you are looking for so that we can help you better" required></textarea>
+                        
+                    </div>
+                    
+                    <div class="offer_category">
+                        <h3>Categories *</h3>
+                        <select class="offers_category_select">
+                          <option value="">Choose Category</option>
+                          <option value="Category 1">Category 1</option>
+                          <option value="Category 2">Category 2</option>
+                          <option value="Category 3">Category 3</option>
+                          <option value="Category 4">Category 4</option>
+                          <option value="Category 5">Category 5</option>
+                          <option value="Category 6">Category 6</option>
+                          <option value="Category 7">Category 7</option>
+      
+                        </select>
+                        <select class="offers_category_select">
+                          <option value="">Choose Subcategory</option>
+                          <option value="Subcategory 1">Subcategory 1</option>
+                          <option value="Subcategory 2">Subcategory 2</option>
+                          <option value="Subcategory 3">Subcategory 3</option>
+                          <option value="Subcategory 4">Subcategory 4</option>
+                          <option value="Subcategory 5">Subcategory 5</option>
+                          <option value="Subcategory 6">Subcategory 6</option>
+                          <option value="Subcategory 7">Subcategory 7</option>
+      
+                        </select>                                 
+                      
+                      <div class="offer_brand">
+                          <h3>Brand </h3>
+                          <input type="number" class="offer_brand_input" placeholder="Enter the product's brand">
+                      </div>
+
+                      <div class="offer_color">
+                        <h3>Color </h3>
+                        <input type="color" class="offer_color_input" placeholder="Enter the product's color">
+                      </div>
+
+                      <div class="offer_measures">
+                        <h3>Product Measures *</h3>
+                        <div>
+                
+                          <label for="Size">Size</label>
+                          <input type="number" class="offer_measures_size" name="size" placeholder="Ex: Small" required>
+
+                          <label for="Weight">Weight</label>
+                          <input type="text" class="offer_measures_weight" name="weight" placeholder="Ex: 4kg" required>
+                          <br>
+                          <label for="width">Width</label>
+                          <input type="number" class="offer_measures_width" name="width" placeholder="Ex: 105cm">
+
+                          <label for="Height">Height</label>
+                          <input type="text" class="offer_measures_height" placeholder="Ex: 190cm">
+                         
+                        </div>
+                        
+                         
+                      </div>
+
+                      <div class="offer_quantity">
+                        <h3>Quantity Estimated / Price *</h3>
+                        <div>
+                          <input type="number" class="offer_quantity_input" placeholder="Ex: 01 unit" required>
+                          <input type="number" class="offer_quantity_input" placeholder="Ex: 99 units" required> 
+      
+                          <label for="price">Price (€)</label>
+                          <input type="number" id="price" class="offer_price_quantity" name="price" step="0.01" required>
+                        </div>
+                        <div>
+                          <input type="number" class="offer_quantity_input" placeholder="Ex: 100 units" >
+                          <input type="number" class="offer_quantity_input" placeholder="Ex: 499 units" > 
+      
+                          <label for="price">Price (€)</label>
+                          <input type="number" id="price" class="offer_price_quantity" name="price" step="0.01">
+                        </div>
+                        <div>
+                          <input type="number" class="offer_quantity_input" placeholder="Ex: 500 units" >
+                          <input type="number" class="offer_quantity_input" placeholder="Ex: 999 units" > 
+      
+                          <label for="price">Price (€)</label>
+                          <input type="number" id="price" class="offer_price_quantity" name="price" step="0.01">
+                        </div>
+                         
+                      </div>
+
+                      
+                      <div class="offer_delivery">
+                        <h3>Estimated Delivery Time </h3>
+                        <input type="number" class="offer_delivery_input" placeholder="Estimated delivery time (days)">
+                      </div>
+
+                      <div class="offer_delivery">
+                        <h3>Transport </h3>
+                        <select class="offers_category_select">
+                          <option value="">Choose the Transportation</option>
+                          <option value="Category 1">Transport 1</option>
+                          <option value="Category 2">Transport 2</option>
+                          <option value="Category 7">Transport 7</option>
+                        </select>
+                      </div>
+
+                      <div class="offer_delivery">
+                        <h3>Availability </h3>
+                        <input type="number" class="offer_delivery_input" placeholder="Estimated Availability time (days)">
+                      </div>
+
+                      <div class="offer_location">
+                        <h3>Delivery Place *</h3>
+                        <select class="offers_category_select">
+                          <option value="">Choose the Location</option>
+                          <option value="Category 1">Place 1</option>
+                          <option value="Category 2">Place 2</option>
+                          <option value="Category 3">Place 3</option>
+                          <option value="Category 4">Place 4</option>
+                          <option value="Category 5">Place 5</option>
+                          <option value="Category 6">Place 6</option>
+                          <option value="Category 7">Place 7</option>
+                        </select>
+                      </div>
+                        
+                    </div>
+
+                    <div class="offer_description">
+                      <h3>Other technical specifications</h3>
+                      <textarea placeholder="Other technical specifications you'd like to add"></textarea>
+                      
+                    </div>
+
+                </div>
+                <a href="#" class="post_offer-btn">Post Product Offer</a>
+            </section>
+        
+	
+	<!-- CONTENT -->
+    <script src="supplierdashboard.js"></script>
+    <script src="offerpage.js"></script>
+</body>
+</html>

@@ -140,8 +140,56 @@
                     </div>
 
                     <i class='bx bx-chevron-right' ></i>
-                    
-                </div>
+
+                </div> 
+
+				<div class="infobox-2-expand">
+					<div class="infobox-2-divs">
+						<div class="infobox-2-username">
+							<span class="data-label">Username</span>
+							<span>Username</span>
+							<i class='bx bx-edit-alt' ></i>
+						</div>
+
+						<div class="infobox-divisor"></div>
+
+						<div class="infobox-2-email">
+							<span class="data-label">Email</span>
+							<span>info@jokla.pt</span>
+							<i class='bx bx-edit-alt' ></i>
+						</div>
+
+						<div class="infobox-divisor"></div>
+
+						<div class="infobox-2-razaosocial">
+							<span class="data-label">Company Name</span>
+							<span>Company Full Name</span>
+						</div>
+
+						<div class="infobox-divisor"></div>
+
+						<div class="infobox-2-nif">
+							<span class="data-label">Company Tax Number</span>
+							<span>123456789</span>
+						</div>
+
+						<div class="infobox-divisor"></div>
+
+						<div class="infobox-2-telephone">
+							<span class="data-label">Telephone</span>
+							<span>123456789</span>
+							<i class='bx bx-edit-alt' ></i>
+						</div>
+
+						<div class="infobox-divisor"></div>
+
+						<div class="infobox-2-mobilephone">
+							<span class="data-label">Mobile Phone</span>
+							<span>123456789</span>
+							<i class='bx bx-edit-alt' ></i>
+						</div>
+					</div>
+				</div>
 
                 <div class="supplier_infobox-3">
                     
@@ -191,7 +239,17 @@
 		<!-- MAIN -->
 	</section>
 
-	<!-- CONTENT -->
+	<!-- Script para clicar nos settings e expandir as infos -->
+
+	<script>
+		const supplierInfobox2 = document.querySelector('.supplier_infobox-2');
+		const infobox2Expand = document.querySelector('.infobox-2-expand');
+		
+		supplierInfobox2.addEventListener('click', () => {
+		  infobox2Expand.classList.toggle('show');
+		});
+	</script>
+
     <script src="supplierdashboard.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<script src="graph.js"></script>

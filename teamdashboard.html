@@ -110,9 +110,65 @@
 					<i class="fa fa-search"></i> 
 				</div>
                 <div class="addcontributor">
-                    <a href="#">+ Add Contributor</a>
+                    <a href="#" id="add-contributor-link">+ Add Contributor</a>
                 </div>
+				
+				<div class="popup-overlay"></div>
+
+					<!-- Pop up --> 
+
+					<div class="popup-addcontributor">
+						<div class="addcontributor-title">
+							<h4>Add Contributor</h4>
+							<i class='bx bx-x'></i>
+						</div>
+
+						<div class="contributor-email">
+							<h5>Email:</h5>
+							<input type="email">
+						</div>
+
+						<div class="contibutor-permissions">
+							<div class="permission-title">
+								<h5>Permissions:</h5>
+							</div>
+							<div class="permission-inputs">
+								<div>
+									<input type="checkbox" name="Total Acccess">
+									<label for="Total Access">Total Access</label>
+								</div>
+								<div>
+									<input type="checkbox" name="Dashboard">
+									<label for="Dashboard">Dashboard</label>
+								</div>
+								<div>
+									<input type="checkbox" name="Products">
+									<label for="Products">Products</label>
+								</div>
+								<div>
+									<input type="checkbox" name="Sales">
+									<label for="Sales">Sales</label>
+								</div>
+								<div>
+									<input type="checkbox" name="Manage Chat">
+									<label for="Manage chat">Manage Chat</label>
+								</div>
+								<div>
+									<input type="checkbox" name="Settings">
+									<label for="Settings">Settings</label>
+								</div>
+							</div>
+						</div>
+
+					
+						<a href="#" class="contributor-add-button">Add Contributor</a>
+						
+
+					</div>
+
             </div>
+
+			
 
             <div class="invitation-filter">
 				<h3>All</h3>
@@ -139,7 +195,7 @@
 					<td> <span class="active">Active</span> </td>
 					<td>Support</td>
 					<td></td>
-					<td> <img src="img/more.png" alt=""></td>
+					<td> <img src="img/more.png" alt="" class="edit-permission"></td>
 				</tr>
 				<tr>
 					<td>name@jokla.pt</td>
@@ -147,7 +203,7 @@
 					<td> <span class="active">Active</span> </td>
 					<td>Director</td>
 					<td></td>
-					<td> <img src="img/more.png" alt=""></td>
+					<td> <img src="img/more.png" alt="" class="edit-permission"></td>
 				</tr>
 				<tr>
 					<td>name@jokla.pt</td>
@@ -155,7 +211,7 @@
 					<td> <span class="pendent">Pendent</span> </td>
 					<td>Manager</td>
 					<td></td>
-					<td> <img src="img/more.png" alt=""></td>
+					<td> <img src="img/more.png" alt="" class="edit-permission"></td>
 				</tr>
 				<tr>
 					<td>name@jokla.pt</td>
@@ -163,7 +219,7 @@
 					<td> <span class="active">Active</span> </td>
 					<td>Finance</td>
 					<td></td>
-					<td> <img src="img/more.png" alt=""></td>
+					<td> <img src="img/more.png" alt="" class="edit-permission"></td>
 				</tr>
 				<tr>
 					<td>name@jokla.pt</td>
@@ -171,7 +227,7 @@
 					<td> <span class="inactive">Inactive</span> </td>
 					<td>Logistic</td>
 					<td></td>
-					<td> <img src="img/more.png" alt=""></td>
+					<td> <img src="img/more.png" alt="" class="edit-permission"></td>
 				</tr>
 				<tr>
 					<td>name@jokla.pt</td>
@@ -179,10 +235,61 @@
 					<td> <span class="active">Active</span> </td>
 					<td>Seller</td>
 					<td></td>
-					<td> <img src="img/more.png" alt=""></td>
+					<td> <img src="img/more.png" alt="" class="edit-permission"></td>
 				 </tr>
 				
 			</table>
+
+			<!-- Pop up --> 
+
+			<div class="popup-editcontributor">
+				<div class="addcontributor-title">
+					<h4>Edit Permission</h4>
+					<i class='bx bx-x'></i>
+				</div>
+
+				<div class="contributor-email">
+					<h5>Email:</h5>
+					<input type="email">
+				</div>
+
+				<div class="contibutor-permissions">
+					<div class="permission-title">
+						<h5>Permissions:</h5>
+					</div>
+					<div class="permission-inputs">
+						<div>
+							<input type="checkbox" name="Total Acccess">
+							<label for="Total Access">Total Access</label>
+						</div>
+						<div>
+							<input type="checkbox" name="Dashboard">
+							<label for="Dashboard">Dashboard</label>
+						</div>
+						<div>
+							<input type="checkbox" name="Products">
+							<label for="Products">Products</label>
+						</div>
+						<div>
+							<input type="checkbox" name="Sales">
+							<label for="Sales">Sales</label>
+						</div>
+						<div>
+							<input type="checkbox" name="Manage Chat">
+							<label for="Manage chat">Manage Chat</label>
+						</div>
+						<div>
+							<input type="checkbox" name="Settings">
+							<label for="Settings">Settings</label>
+						</div>
+					</div>
+				</div>
+
+			
+				<a href="#" class="contributor-add-button">Add Contributor</a>
+				
+
+			</div>
 
         </div>
 
@@ -190,6 +297,9 @@
 	
 	</section>
 	
+	<!-- Script -->
+
     <script src="supplierdashboard.js"></script>
+	<script src="team-popup.js"></script>
 </body>
 </html>

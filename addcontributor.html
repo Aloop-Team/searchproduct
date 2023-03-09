@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="supplierdashboard.css">
-    <link rel="stylesheet" href="postdashboard.css">
+    <link rel="stylesheet" href="addcontributor.css">
     <title>Document</title>
 </head>
 <body>
@@ -32,7 +32,7 @@
 					<span class="text">Products</span>
 				</a>
 			</li>
-			<li class="active">
+			<li>
 				<a href="postdashboard.html">
 					<i class='bx bx-edit-alt'></i>
 					<span class="text">Posts</span>
@@ -44,7 +44,7 @@
 					<span class="text">Sales</span>
 				</a>
 			</li>
-			<li>
+			<li class="active">
 				<a href="teamdashboard.html">
 					<i class='bx bxs-group' ></i>
 					<span class="text">Team</span>
@@ -102,90 +102,24 @@
 		<!-- NAVBAR -->
 
             
-	<div class="head-title">
-		<div class="left">
-			<h2>Your Posts</h2>		
-		</div>
-		<a href="createapostdashboard.html" class="btn-download">
-			<i class="fa-solid fa-plus"></i>
-			<span class="text">Create Post</span>
-		</a>		
-	</div>
+    <div class="return-posts">
+        <a href="postdashboard.html"><i class='bx bx-arrow-back'></i>Return to Posts</a>
+    </div>
 
-    <section class="post-dashboard">
-  
-		<table>
-			<thead>
-			  <tr>
-				  <th>DATE</th>
-				  <th>TITLE</th>
-				  <th>STATUS</th>
-				  <th>CATEGORY</th>
-				  <th>PRICE</th>
-				  <th>QUANTITY</th>
-				  <th></th>
-			  </tr>
-			</thead> 
-			  
-			<tr>
-			  <td>01/01/2023 at 11:00</td>
-			  <td>Product 1</td>
-			  <td> <span class="active">Active</span> </td>
-			  <td>Category Name</td>
-			  <td>€1000.00</td>
-			  <td>100 pieces</td>
-			  <td> <a href="editapostdashboard.html"><img src="img/more.png" alt=""></a></td>
-			</tr>
-			<tr>
-			  <td>01/01/2023 at 11:00</td>
-			  <td>Product 1</td>
-			  <td> <span class="active">Active</span> </td>
-			  <td>Category Name</td>
-			  <td>€1000.00</td>
-			  <td>100 pieces</td>
-			  <td> <a href="editapostdashboard.html"><img src="img/more.png" alt=""></a></td>
-			</tr>
-			<tr>
-			  <td>01/01/2023 at 11:00</td>
-			  <td>Product 1</td>
-			  <td> <span class="inactive">Inactive</span> </td>
-			  <td>Category Name</td>
-			  <td>€1000.00</td>
-			  <td>100 pieces</td>
-			  <td> <a href="editapostdashboard.html"><img src="img/more.png" alt=""></a></td>
-			</tr>
-			<tr>
-			  <td>01/01/2023 at 11:00</td>
-			  <td>Product 1</td>
-			  <td> <span class="active">Active</span> </td>
-			  <td>Category Name</td>
-			  <td>€1000.00</td>
-			  <td>100 pieces</td>
-			  <td> <a href="editapostdashboard.html"><img src="img/more.png" alt=""></a></td>
-			</tr>
-			<tr>
-			  <td>01/01/2023 at 11:00</td>
-			  <td>Product 1</td>
-			  <td> <span class="active">Active</span> </td>
-			  <td>Category Name</td>
-			  <td>€1000.00</td>
-			  <td>100 pieces</td>
-			  <td> <a href="editapostdashboard.html"><img src="img/more.png" alt=""></a></td>
-			</tr>
-			<tr>
-			  <td>01/01/2023 at 11:00</td>
-			  <td>Product 1</td>
-			  <td> <span class="active">Active</span> </td>
-			  <td>Category Name</td>
-			  <td>€1000.00</td>
-			  <td>100 pieces</td>
-			  <td><a href="editapostdashboard.html"><img src="img/more.png" alt=""></a></td>
-			</tr>
+	<!-- Offers Page section -->
+
+	<section class="offers_page_setup">
+          
+		<div class="offers_page_setup_box">
+		  <h2 class="offers_page_setup_h2">Create a New Post</h2>
 			
-		  </table>
-
-	
+            
+			
+		</div>
+		<a href="#" class="post_offer-btn">Make Offer Public</a>
+		
 	</section>
+
 	
     <script src="supplierdashboard.js"></script>
 </body>

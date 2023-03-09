@@ -1,19 +1,21 @@
-.return-product {
+.return-posts {
     margin: 30px 50px;
 }
 
-.return-product i {
+.return-posts i {
     margin-right: 10px;
 }
 
-.return-product a {
+.return-posts a {
     color: #20364B;
     background: #65ebe4;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
     font-weight: 600;
-}
+}  
+
+/* Post you offer */
 
 .offers_page_setup {
     margin: 30px 50px;
@@ -24,7 +26,7 @@
     background-color: white;
 }
 
-.offers_page_setup_box h2 {
+.offers_page_setup_h2 {
     text-align: center;
     font-size: 29px;
     font-weight: 700;
@@ -32,14 +34,14 @@
     color: #20364B;
 }
 
-.offers_page_setup {
+.offers_page_setup h3 {
     color: #20364B;
 }
 
 /* Start of Only Supplier section */ 
 .offer_img_grid {
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: 19.3% 19.3% 19.3%;
     gap: 10px;
     margin-top: 20px;
     cursor: pointer;
@@ -80,13 +82,21 @@
     font-weight: 500;
     font-size: 19px;
     margin: 40px 0 20px;
-}   
+}
+
+.two_features_inadiv {
+    display: flex;
+    gap: 15px;
+}
+
+.offer_location,
+.offer_delivery {
+    width: 80%;
+}
 
 .offer_location_input,
-.offer_delivery_input,
-.offer_brand_input,
-.offer_color_input  {
-    width: 30%;
+.offer_delivery_input  {
+    width: 100%;
     border: none;
     border-radius: 3px;
     height: 50px;
@@ -108,46 +118,34 @@
     font-size: 14px;
 }
 
-.offer_measures label {
-    margin: 0 15px;
+.offer_price_quantity {
+    margin-top: 15px;
+    width: 22.5%;
+    border: none;
+    border-radius: 3px;
+    height: 50px;
+    padding: 0 10px;
+    outline: none;
+    background: #F2F4F5;
+    font-size: 14px;
 }
 
-.offer_measures input,
-.offer_measures label {
+.offer_location,
+.offer_delivery,
+.offer_quantity {
+    margin: 35px 0 0;
+}
+
+.offer_location h3,
+.offer_delivery h3,
+.offer_quantity h3 {
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
-.offer_price_quantity,
-.offer_measures_height,
-.offer_measures_width,
-.offer_measures_weight,
-.offer_measures_size {
-    margin-top: 15px;
-    width: 30%;
-    border: none;
-    border-radius: 3px;
-    height: 50px;
-    padding: 0 10px;
-    outline: none;
-    background: #F2F4F5;
-    font-size: 14px;
-}
 
-.offer_measures_input {
-    width: 20%;
-    border: none;
-    border-radius: 3px;
-    height: 50px;
-    padding: 0 10px;
-    margin-right: 10px;
-    outline: none;
-    background: #F2F4F5;
-    font-size: 14px;
-}
-
-.offer_quantity_input,
-.offer_measures_input {
-    width: 20%;
+.offer_quantity_input {
+    width: 29.3%;
     border: none;
     border-radius: 3px;
     height: 50px;
@@ -167,7 +165,6 @@
 
 .offer_pricerange_input {
     width: 30%;
-    
     height: 10px;
     border-radius: 5px;
     background-color: #e0e0e0;
@@ -206,10 +203,7 @@
 .offer_description textarea::placeholder,
 .offer_location_input::placeholder,
 .offer_delivery_input::placeholder,
-.offer_brand_input::placeholder,
-.offer_color_input::placeholder,
-.offer_quantity_input::placeholder,
-.offer_measures_input::placeholder {
+.offer_quantity_input::placeholder {
     color: #c6c6c6f9;
 }
 
@@ -234,7 +228,7 @@
     outline: none;
     transition: 0.4s;
     display: block;
-    width: 100%;
+    width: 60%;
     font-size: 17px;
   }
 
@@ -248,7 +242,7 @@
     background: white;
     display: none;
     overflow: hidden;
-    width: 100%;
+    width: 60%;
 
   }
 
@@ -295,6 +289,8 @@
     transform: scale(1.05);
 }
 
+
+
   @media screen and (max-width: 820px) {
     .offers_page_setup {
         margin: 40px 20px;
@@ -317,8 +313,7 @@
         background: #F2F4F5;
     }
 
-    .offer_quantity_input,
-    .offer_measures_input {
+    .offer_quantity_input {
         width: 45%;
         background: white;
         border: 1px solid rgba(205, 205, 205, 0.567);
@@ -344,8 +339,7 @@
     }
 
     .offer_pricerange_input,
-    .offer_delivery_input,
-    .offer_brand_input  {
+    .offer_delivery_input  {
         width: 97%;
     }
   }
@@ -387,4 +381,6 @@
         font-size: 21px;
     }
   }
+
+
 
