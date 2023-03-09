@@ -129,16 +129,25 @@
     font-weight: 600;
 }
 
-.infobox-2-expand {
+.infobox-2-expand,
+.infobox-3-expand,
+.infobox-4-expand,
+.infobox-5-expand {
     display: none;
   }
   
-.infobox-2-expand.show {
+.infobox-2-expand.show,
+.infobox-3-expand.show,
+.infobox-4-expand.show,
+.infobox-5-expand.show    {
     display: block;
     box-shadow: 0px 3px 3px rgb(0 0 0 / 5%);
 }
 
-.infobox-2-divs {
+.infobox-2-divs,
+.infobox-3-divs,
+.infobox-4-divs,
+.infobox-5-divs {
     background-color: white;
     margin: -15px 0 20px;
     padding: 30px 30px 15px;
@@ -152,11 +161,12 @@
 
 .infobox-divisor {
     border: 0.5px solid #5b616e2a;
-    margin: 10px 0;
+    margin: 13px 0;
 }
 
 .infobox-2-username,
 .infobox-2-email,
+.infobox-2-address,
 .infobox-2-telephone,
 .infobox-2-mobilephone,
 .infobox-2-razaosocial,
@@ -165,5 +175,76 @@
     grid-template-columns: 35% 60% 5%;
 }
 
+.bx-edit-alt {
+    cursor: pointer;
+    font-size: 18px;
+}
 
+.infobox-3-password,
+.infobox-4-shipping,
+.infobox-5-bank {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+}
 
+.infobox-3-password:hover,
+.infobox-4-shipping:hover,
+.infobox-5-bank:hover {
+    background-color: #b3b6bc2a;
+}
+
+.infobox-3-password div,
+.infobox-4-shipping div,
+.infobox-5-bank div {
+    display: block;
+}
+
+.infobox-3-password span,
+.infobox-4-shipping span,
+.infobox-5-bank span {
+    font-size: 15px;
+}
+
+.infobox-3-password1,
+.infobox-3-password2,
+.infobox-4-shipping1,
+.infobox-4-shipping2,
+.infobox-5-bank1,
+.infobox-5-bank2 {
+    width: 7%;
+}
+
+.infobox-3-divs .bxs-check-shield,
+.infobox-3-divs .bxs-lock,
+.infobox-4-divs .bxs-ship, 
+.infobox-4-divs .bxs-plane-take-off,
+.infobox-4-divs .bxs-truck,
+.infobox-5-divs .bxs-bank,
+.infobox-5-divs .bx-dollar-circle {
+    font-size: 32px;
+    color: #b3b6bcb6;
+}
+
+.infobox3-label,
+.infobox5-label {
+    color: #777777;
+}
+
+.security-divisor {
+    border: 0.5px solid #5b616e2a;
+}
+
+.infobox-4-shipping input {
+    border: 1px solid #7777776b;
+    padding: 6px;
+    border-radius: 5px;
+    width: 220%;
+  
+}
+
+.infobox-4-shipping input::placeholder {
+    color: #20354b4e;
+}

@@ -175,6 +175,14 @@
 
 						<div class="infobox-divisor"></div>
 
+						<div class="infobox-2-address">
+							<span class="data-label">Address</span>
+							<span>XYZ Road, Building 1</span>
+							<i class='bx bx-edit-alt' ></i>
+						</div>
+
+						<div class="infobox-divisor"></div>
+
 						<div class="infobox-2-telephone">
 							<span class="data-label">Telephone</span>
 							<span>123456789</span>
@@ -204,6 +212,42 @@
                     
                 </div>
 
+				<div class="infobox-3-expand">
+					<div class="infobox-3-divs">
+						<div class="infobox-3-password">
+							<div class="infobox-3-password1">
+								<i class='bx bxs-lock'></i>
+							</div>
+							<div>
+								<div>
+									<span class="infobox3-label">Password</span>
+								</div>
+								<div>
+									<span id="password">123456789</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="security-divisor"></div>
+
+						<div class="infobox-3-password">
+							<div class="infobox-3-password2">
+								<i class='bx bxs-check-shield'></i>
+							</div>
+							<div>
+								<div>
+									<span class="infobox3-label">2 Step Verification</span>
+								</div>
+								<div>
+									<span>select a verification method to add an extra layer of security to your account</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					
+				</div>
+
                 <div class="supplier_infobox-4">
                     
                     <i class='bx bxs-package' ></i>
@@ -216,6 +260,49 @@
                     <i class='bx bx-chevron-right' ></i>
                     
                 </div>
+
+				<div class="infobox-4-expand">
+					<div class="infobox-4-divs">
+						<div class="infobox-4-shipping">
+							<div class="infobox-4-shipping1">
+								<i class='bx bxs-plane-take-off' ></i>
+							</div>
+							<div>
+								<form>
+									<input type="text" placeholder="Type the locations where you'll be able to ship">
+								</form>
+							</div>
+						</div>
+
+						<div class="security-divisor"></div>
+
+						<div class="infobox-4-shipping">
+							<div class="infobox-4-shipping2">
+								<i class='bx bxs-ship' ></i>
+							</div>
+							<div>
+								<form>
+									<input type="text" placeholder="Type the locations where you'll be able to ship">
+								</form>
+							</div>
+						</div>
+
+						<div class="security-divisor"></div>
+
+						<div class="infobox-4-shipping">
+							<div class="infobox-4-shipping2">
+								<i class='bx bxs-truck' ></i>
+							</div>
+							<div>
+								<form>
+									<input type="text" placeholder="Type the locations where you'll be able to ship">
+								</form>
+							</div>
+						</div>
+
+					</div>
+					
+				</div>
 
                 <div class="supplier_infobox-5">
                     
@@ -230,6 +317,42 @@
                     
                 </div>
 
+				<div class="infobox-5-expand">
+					<div class="infobox-5-divs">
+						<div class="infobox-5-bank">
+							<div class="infobox-5-bank1">
+								<i class='bx bx-dollar-circle'></i>
+							</div>
+							<div>
+								<div>
+									<span class="infobox5-label">IBAN</span>
+								</div>
+								<div>
+									<span id="password">PT00 000000 00000 00000</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="security-divisor"></div>
+
+						<div class="infobox-5-bank">
+							<div class="infobox-5-bank2">
+								<i class='bx bxs-bank' ></i>
+							</div>
+							<div>
+								<div>
+									<span class="infobox5-label">BIC</span>
+								</div>
+								<div>
+									<span>TOTAPTPL</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					
+				</div>
+
             </div>
 
             
@@ -239,20 +362,47 @@
 		<!-- MAIN -->
 	</section>
 
-	<!-- Script para clicar nos settings e expandir as infos -->
+	<!-- Script para clicar nos settings e expandir as infos / script para as letras da senha aparecerem em * -->
 
 	<script>
+
 		const supplierInfobox2 = document.querySelector('.supplier_infobox-2');
 		const infobox2Expand = document.querySelector('.infobox-2-expand');
 		
 		supplierInfobox2.addEventListener('click', () => {
 		  infobox2Expand.classList.toggle('show');
 		});
+
+		const supplierInfobox3 = document.querySelector('.supplier_infobox-3');
+		const infobox3Expand = document.querySelector('.infobox-3-expand');
+		
+		supplierInfobox3.addEventListener('click', () => {
+		  infobox3Expand.classList.toggle('show');
+		});
+
+		const supplierInfobox4 = document.querySelector('.supplier_infobox-4');
+		const infobox4Expand = document.querySelector('.infobox-4-expand');
+		
+		supplierInfobox4.addEventListener('click', () => {
+		  infobox4Expand.classList.toggle('show');
+		});
+
+		const supplierInfobox5 = document.querySelector('.supplier_infobox-5');
+		const infobox5Expand = document.querySelector('.infobox-5-expand');
+		
+		supplierInfobox5.addEventListener('click', () => {
+		  infobox5Expand.classList.toggle('show');
+		});
+
+
+
+		const password = document.getElementById("password").textContent;
+		const asteriscos = "*".repeat(password.length);
+		document.getElementById("password").textContent = asteriscos;
+	
 	</script>
 
     <script src="supplierdashboard.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<script src="graph.js"></script>
 	
 </body>
 </html>

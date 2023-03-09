@@ -161,7 +161,7 @@ img {
     cursor: pointer;
 }
 
-/* --------------------- Pop up --------------------- */
+/* --------------------- Add Pop up --------------------- */
 
 .popup-overlay {
     position: fixed;
@@ -266,7 +266,4 @@ img {
     transform: scale(1.04);
     transition: 0.3s ease-out;
 }
-  
-input[type=checkbox]:checked {
-    background-color: #65EBE4; 
-}
+
