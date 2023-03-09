@@ -248,3 +248,25 @@
 .infobox-4-shipping input::placeholder {
     color: #20354b4e;
 }
+
+
+.delete-account {
+    text-align: center;
+    margin: 50px 0 60px;
+  }
+  
+.delete-account a {
+    display: inline-block;
+    background-color: rgba(184, 43, 43, 0.638);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 7px 24px;
+    border-radius: 6px;
+}
+
+.delete-account a:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease-out;
+}
+  
