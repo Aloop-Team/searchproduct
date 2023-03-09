@@ -1,0 +1,72 @@
+.head-title h2 {
+    color: #20364b;
+    padding: 40px 30px 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.chat-dashboard {
+    margin: 30px;
+}
+
+/* CHATS */
+
+.chat-box-div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 5%);
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 10% 20% 37% 8% 15% 10%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.chat-box-div:hover {
+    box-shadow: 0px 3px 3px rgba(64, 64, 64, 0.204);
+    cursor: pointer;
+}
+
+.chat-box-div .bxs-trash {
+    font-size: 125%;
+    margin-left: 20px;
+    color: rgba(191, 17, 17, 0.769);
+}
+
+.chat-box-div .chat-user-img {
+    border-radius: 50%;
+    width: 60%;
+    margin-left: 15px;
+}
+
+.chat-box-div .chat-visibility-img {
+    width: 25px;
+    margin: 0 auto;
+}
+
+.chat-box-div h3 {
+    font-size: 18px;
+    color: #20364bbe;
+}
+
+.chat-box-div p {
+    color: #777777;
+    font-size: 15px;
+}
+
+.chat-box-div button {
+    background-color: #20354B;
+    border: none;
+    color: #65EBE4;
+    font-size: 15px;
+    font-weight: 500;
+    height: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.chat-box-div button:hover {
+    transform: scale(1.04);
+    transition: 0.4s ease-out;
+}
