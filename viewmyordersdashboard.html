@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="supplierdashboard.css">
-	<link rel="stylesheet" href="buyerdashboard.css">
+    <link rel="stylesheet" href="viewmyordersdashboard.css">
     <title>Document</title>
-</head>
+</head> 
 <body>
 
     <!-- sidebar -->
@@ -26,8 +26,8 @@
 					<span class="text">Dashboard</span>
 				</a>
 			</li>
-			<li class="active">
-				<a href="#">
+            <li>
+				<a href="buyerdashboard.html">
 					<i class='bx bxs-data' ></i>
 					<span class="text">Buyer Dashboard</span>
 				</a>
@@ -38,7 +38,7 @@
 					<span class="text">Products</span>
 				</a>
 			</li>
-			<li>
+            <li class="active">
 				<a href="myordersdashboard.html">
 					<i class='bx bxs-shopping-bag-alt' ></i>
 					<span class="text">My Orders</span>
@@ -50,7 +50,7 @@
 					<span class="text">Posts</span>
 				</a>
 			</li>
-			<li>
+			<li >
 				<a href="salesdashboard.html">
 					<i class='bx bxs-doughnut-chart' ></i>
 					<span class="text">Sales</span>
@@ -81,7 +81,7 @@
 				</a>
 			</li>
 		</ul>
-		<ul class="side-menu">
+    <ul class="side-menu">
 			
 			<li>
 				<a href="#" class="logout">
@@ -113,111 +113,59 @@
 		</nav>
 		<!-- NAVBAR -->
 
-        <main>
             
-			<div class="head-title">
-				<div class="left">
-					<h1>Dashboard</h1>
-					
-				</div>
-				
-				<div class="dashboard__filters">
-					<select id="ver-todos">
-						
-						<option value="30 dias">Last 30 days</option>
-						<option value="All time">All time</option>
-					</select>
-					
-				</div>
-			</div>
+    <div class="return-posts">
+        <a href="myordersdashboard.html"><i class='bx bx-arrow-back'></i>Return to Orders</a>
+    </div>
 
-			<div class="buyerdashboard-data-col0">
-				<div class="buyermostviewed-box">
-					<div class="most-viewed-title-box">
-						<div class="text-box">
-							<img src="img/bar-chart.png" width="27px" height="27px">
-						</div>
+	<!-- Offers Page section -->
 
-						<div class="text-box2">
-							<h2>Based on Your Interests</h2>
-						</div>
-					</div>
-					
-					<div class="most-viewed-product-box">
-						<div class="most-viewed-first">
-							<img src="img/newchair.png" width="90px" height="90px">
-							<p>Product 1</p>
-						</div>
-						
-						<div class="most-viewed-second">
-							<img src="img/newchair.png" width="90px" height="90px">
-							<p>Product 2</p>
-						</div>
-						<div class="most-viewed-third">
-							<img src="img/newchair.png" width="90px" height="90px">
-							<p>Product 3</p>
-						</div>
-						
-					</div>
-				</div>
-			</div>
+	<section class="view_sale_page">
+          
+		<div class="view_sale_page_box">
+		  <h2 class="view_sale_h2">Order Number #0001</h2>
+            
+            <div class="product_sale_info">
+                <div>
+                    <img src="img/newchair.png" alt="">
+                </div>
+            </div> 
+            
+            <div class="product_price_quantity">
+                <p> <b>Price:</b> € 1000.00 <i class='bx bx-minus'></i> <b>Quantity:</b> 10 pcs  </p>
+                
+            </div>
 
-			<div class="buyerdashboard-data">
-				
-				<div class="buyerdashboard-data-col1">
-	
-					<div class="buyerpurchases-box">
-						<div class="text-box">
-							<img src="img/back.png" width="27px" height="27px">
-						</div>
-						<div class="text-box">
-							<h3>Purchases</h3>
-							<p>40 pieces</p>
-							
-						</div>
-					</div>
-					
-					<div class="buyerrefund-box">
-						<div class="text-box">
-							<img src="img/back.png" width="27px" height="27px">
-						</div>
-						<div class="text-box">
-							<h3>Orders Refunded</h3>
-							<p>10 %</p>
-						</div>
-					</div>
-				</div>
-				<div class="buyerdashboard-data-col2">
-					
-					<div class="buyernumberofposts-box">
-						<div class="text-box">
-							<img src="img/global.png" width="27px" height="27px">
-						</div>
-						<div class="text-box">
-							<h3>Number Of Posts</h3>
-							<p>4</p>
-						</div>
-					</div>
-					<div class="buyerapproved-box">
-						<div class="text-box">
-							<img src="img/checked.png" width="27px" height="27px">
-						</div>
-						<div class="text-box">
-							<h3>Orders Approved</h3>
-							<p>90 %</p>
-						</div>
-					</div>
-				</div>
-			</div>
+			<div class="costumer_sale_info">
+                <div class="costumer_name">
+                    <h3>Costumer's Name</h3>
+                    <p> <b>Company:</b> Google S.A.</p>
+                    <p> <b>Buyer:</b> Joost Skellechens</p>
+                </div>
+                <div class="costumer_shipping_address">
+                    <h3>Shipping Address</h3>
+                    <p> <b>Street:</b> XYZ Road, Building 1</p>
+                    <p> <b>City:</b> Porto</p>
+                    <p> <b>Postal Code:</b> 4000-100</p>
+                    <p> <b>Country:</b> Portugal</p>
 
-		</main>
-		<!-- MAIN -->
+                </div>
+                <div class="costumer_shipping_method">
+                    <h3>Shipping Method</h3>
+                    <p>Airplane shipping</p>
+                    <p>€ 17.00 (1 to 4 business days).</p>
+                </div>
+                <div class="costumer_payment_method">
+                    <h3>Payment Method</h3>
+                    <p>Credit Card</p>
+                </div>
+            </div>		
+			
+		</div>
+		
 	</section>
-	
+
 	
     <script src="supplierdashboard.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<script src="graph.js"></script>
-	
 </body>
 </html>

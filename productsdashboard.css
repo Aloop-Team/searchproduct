@@ -116,7 +116,7 @@ td {
 
 th {
     border: 1px solid #ddd;
-    padding: 25px;
+    padding: 25px 0;
     text-align: left;
     border: none;
     text-align: center;
@@ -144,11 +144,12 @@ tr {
 }
 
 .table-image-more {
-    width: 11%;
+    width: 1.3em;
+    margin-right: 20px;
     cursor: pointer;
 }
        
-.enabled, .disabled {
+.enabled, .disabled, .paid, .pending, .cancelled {
     padding: 6px 20px;
     border-radius: 4px;
     cursor: pointer;
@@ -163,9 +164,23 @@ tr {
 
 .disabled {
     color: white;
-    background-color: var(--red);
+    background-color: #D6857F;
 }
-        
+
+.cancelled {
+    color: white;
+    background-color: #D6857F;
+}
+
+.paid {
+    color: #20354B;
+    background-color: #65ebe483;
+}
+
+.pending {
+    color: #20354B;
+    background-color: #ffe31064;
+}
 
 @media screen and (min-width: 1200px) {
     td img {

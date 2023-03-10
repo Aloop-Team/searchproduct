@@ -32,14 +32,14 @@
 					<span class="text">Buyer Dashboard</span>
 				</a>
 			</li>
-			<li  class="active">
-				<a href="#">
+			<li >
+				<a href="productsdashboard.html">
 					<i class='bx bxs-shopping-bag-alt' ></i>
 					<span class="text">Products</span>
 				</a>
 			</li>
-			<li>
-				<a href="myordersdashboard.html">
+			<li  class="active">
+				<a href="#">
 					<i class='bx bxs-shopping-bag-alt' ></i>
 					<span class="text">My Orders</span>
 				</a>
@@ -117,13 +117,10 @@
             
 			<div class="head-title">
 				<div class="left">
-					<h1 id="switch-mode">Products</h1>
+					<h1 id="switch-mode">My Orders</h1>
 					
 				</div> 
-				<a href="createaproduct.html" class="btn-download">
-					<i class="fa-solid fa-plus"></i>
-					<span class="text">Create Product</span>
-				</a>
+				
 			</div>
 
             <div class="flow__produtosbox" id="switch-mode">
@@ -138,8 +135,8 @@
                             
 
                             <select id="ver-todos">
-                                <option value="ativos">Enabled</option>
-                                <option value="inativos">Disabled</option>
+                                <option value="ativos">Shipped</option>
+                                <option value="inativos">Preparing</option>
                                 <option value="todos">All Products</option>
                             </select>
                         </div>
@@ -152,7 +149,7 @@
                                 <th>PRICE</th>
                                 <th>STATUS</th>
                                 <th>QUANTITY</th>
-                                <th>SKU</th>
+                                <th>ORDER NUMBER</th>
 								
                             </tr>
                           </thead> 
@@ -161,56 +158,48 @@
 							<td> <img src="img/newchair.png" class="table-image-product"></td>
                             <td>Product 1</td>
                             <td>€1000.00</td>
-                            <td> <span class="enabled">Enabled</span> </td>
+                            <td> <span class="paid">Paid</span> </td>
                             <td>100</td>
 							<td>10101010</td>
-                            <td> <a href="editaproductdashboard.html"><img src="img/more.png" class="table-image-more"></a></td>
+                            <td> <a href="viewmyordersdashboard.html"><img src="img/more.png" class="table-image-more"></a></td>
                           </tr>
                           <tr>
 							<td> <img src="img/newchair.png" class="table-image-product"></td>
                             <td>Product 2</td>
                             <td>€1000.00</td>
-                            <td> <span class="disabled">Disabled</span> </td>
+                            <td> <span class="pending">Pending</span> </td>
                             <td>100</td>
 							<td>10101010</td>
-                            <td> <a href="editaproductdashboard.html"><img src="img/more.png" class="table-image-more"></a></td>
+                            <td> <a href="viewmyordersdashboard.html"><img src="img/more.png" class="table-image-more"></a></td>
                           </tr>
                           <tr>
 							<td> <img src="img/newchair.png" class="table-image-product"></td>
                             <td>Product 3</td>
                             <td>€1000.00</td>
-                            <td> <span class="enabled">Enabled</span> </td>
+                            <td> <span class="cancelled">Cancelled</span> </td>
                             <td>100</td>
 							<td>10101010</td>
-                            <td> <a href="editaproductdashboard.html"><img src="img/more.png" class="table-image-more"></a></td>
+                            <td> <a href="viewmyordersdashboard.html"><img src="img/more.png" class="table-image-more"></a></td>
                           </tr>
                           <tr>
 							<td> <img src="img/newchair.png" class="table-image-product"></td>
                             <td>Product 4</td>
                             <td>€1000.00</td>
-                            <td> <span class="disabled">Disabled</span> </td>
+                            <td> <span class="pending">Pending</span> </td>
                             <td>100</td>
 							<td>10101010</td>
-                            <td> <a href="editaproductdashboard.html"><img src="img/more.png" class="table-image-more"></a></td>
+                            <td> <a href="viewmyordersdashboard.html"><img src="img/more.png" class="table-image-more"></a></td>
                           </tr>
                           <tr>
 							<td> <img src="img/newchair.png" class="table-image-product"></td>
                             <td>Product 4</td>
                             <td>€1000.00</td>
-                            <td> <span class="enabled">Enabled</span> </td>
+                            <td> <span class="paid">Paid</span> </td>
                             <td>100</td>
 							<td>10101010</td>
-                            <td> <a href="editaproductdashboard.html"><img src="img/more.png" class="table-image-more"></a></td>
+                            <td> <a href="viewmyordersdashboard.html"><img src="img/more.png" class="table-image-more"></a></td>
                           </tr>
-                          <tr>
-							<td> <img src="img/newchair.png" class="table-image-product"></td>
-                            <td>Product 4</td>
-                            <td>€1000.00</td>
-                            <td> <span class="disabled">Disabled</span> </td>
-                            <td>100</td>
-							<td>10101010</td>
-                            <td> <a href="editaproductdashboard.html"><img src="img/more.png" class="table-image-more"></a></td>
-                          </tr>
+                          
                         </table>
                         
                     </div>

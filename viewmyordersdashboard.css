@@ -1,0 +1,119 @@
+.return-posts {
+    margin: 30px 50px;
+}
+
+.return-posts i {
+    margin-right: 10px;
+}
+
+.return-posts a {
+    color: #20364B;
+    background: #65ebe4;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}  
+
+/* Post you offer */
+
+.view_sale_page {
+    margin: 30px 50px;
+    padding: 50px 80px;
+    min-height: 100vh;
+    box-shadow: 0 0 7px 3px #7777770b;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.view_sale_h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #20364B;
+}
+
+.product_sale_info {
+    display: flex;
+    gap: 30px;
+    margin: 25px 0;
+}
+
+.product_sale_info div {
+    flex: 1;
+}
+
+.product_sale_info img {
+    width: 25%;
+    display: block;
+    margin: 30px auto;
+}
+
+.product_price_quantity {
+    margin-bottom: 40px;
+}
+
+.product_price_quantity p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 21px;
+    color: #20364B;
+    margin-bottom: 10px;
+}
+
+.costumer_sale_info {
+    padding: 25px;
+    background-color: #f8f8fbc5;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.costumer_sale_info > div {
+    flex-basis: 45%;
+    margin: 15px;
+  }
+
+.costumer_sale_info div h3 {
+    color: #20364b;
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.costumer_sale_info div p {
+    color: #20364b93;
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+.bx-minus {
+    color: #20364ba3;
+    margin: 0 15px;
+}
+
+
+  @media screen and (max-width: 820px) {
+    .view_sale_page {
+        margin: 40px 20px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+
+    .view_sale_page {
+        padding: 40px 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 361px) {
+    .view_sale_page_box h2 {
+        font-size: 21px;
+    }
+  }
+
+
+
