@@ -1,9 +1,12 @@
 .settings-share-section {
-    margin: 30px 50px;
+    margin: 40px 25px;
 }
 
 .share-title h2 {
-    color: #20364b;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #20354B;
 }
 
 .share-input {
