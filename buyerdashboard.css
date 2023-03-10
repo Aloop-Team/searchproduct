@@ -1,0 +1,112 @@
+.buyerdashboard-data {
+    display: flex;
+    margin: 30px 20px 0;
+    gap: 25px;
+}
+
+.buyerdashboard-data-col0 {
+    margin: 30px 20px 0;
+    color: #777777;
+}
+
+.buyerdashboard-data-col0 li {
+    margin-bottom: 10px;
+}
+
+.buyermostviewed-box {
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 5%);
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.most-viewed-title-box {
+    margin-bottom: 40px;
+}
+
+.most-viewed-title-box .text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.most-viewed-title-box .text-box2 h2 {
+    font-size: 23px;
+}
+
+.most-viewed-title-box .text-box img {
+    margin-bottom: 15px;
+}
+
+
+
+.most-viewed-product-box {
+    display: flex;
+    gap: 30px;
+}
+
+.most-viewed-first,
+.most-viewed-second,
+.most-viewed-third {
+    text-align: center;
+    cursor: pointer;
+    padding: 25px 50px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.most-viewed-first:hover,
+.most-viewed-second:hover,
+.most-viewed-third:hover {
+    transform: scale(1.04);
+    transition: 0.3s ease-out;
+}
+
+.most-viewed-first {
+    background-color: #ffd50049;
+}
+
+.most-viewed-second {
+    background-color: #d0d0d04f;
+}
+
+.most-viewed-third {
+    background-color: #ca865e5e;
+}
+
+.buyerdashboard-data-col0 .bx-minus {
+    margin: 0 10px;
+    font-size: 10px;
+}
+
+.buyerdashboard-data-col0 p {
+    margin: 15px 0 0;
+}
+
+.buyerdashboard-data-col1,
+.buyerdashboard-data-col2 {
+    display: inline-block;
+    width: 50%;
+    color: #777777;
+}
+
+.buyerrefund-box,
+.buyerpurchases-box,
+.buyernumberofposts-box,
+.buyerapproved-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 5%);
+    padding: 0 30px;
+    height: 15vh;
+}
+
+
