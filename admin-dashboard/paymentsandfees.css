@@ -1,0 +1,99 @@
+.salesgraphic-box,
+.paymentsoffees-box,
+.totaltransactions-box,
+.premiumsubscriptions-box {
+	margin-bottom: 3%;
+	padding: 30px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0px 3px 3px rgb(0 0 0 / 5%);
+}
+
+.salesgraphic-box {
+	height: 100%;
+}
+
+.salesgraphic-box {
+    text-align: center;
+    font-size: 20px;
+}
+
+.refund-box,
+.paymentsoffees-box,
+.totaltransactions-box,
+.premiumsubscriptions-box  {
+	height: 30.7%;
+	display: flex;
+  	justify-content: start;
+    align-items: center;
+}
+
+.text-box {
+	margin-top: 5px;
+}
+
+.text-box h3,
+.text-box p {
+	margin-left: 20px;
+}
+
+.text-box h3 {
+    font-size: 23px;
+	margin-top: -5px;
+}
+
+.adminmoredetails-payments-fees {
+    display: flex;
+    gap: 25px;
+}
+
+.purchases-by-buyer,
+.fees-by-supplier {
+    flex: 1;
+    flex-wrap: wrap;
+    background-color: white;
+    margin-top: 25px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 5%);
+    text-align: center;
+}
+
+.purchases-by-buyer h3,
+.fees-by-supplier h3 {
+    padding: 15px 0;
+    color: #777777;
+    font-size: 20px;
+	font-weight: 600;
+}
+
+.payments-fees-details {
+    border-top: 0.8px solid #7777772a;
+    border-bottom: 0.8px solid #7777772a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.payments-fees-details div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.payments-fees-details img {
+    width: 27px;
+}
+
+.payments-fees-details h5 {
+    color: #777777;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.payments-fees-details p {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+}

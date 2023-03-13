@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="admindashboard.css">
+    <link rel="stylesheet" href="paymentsandfees.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- sidebar -->
+
+    <section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-code'></i>
+			<img src="../img/jokla-logo.png" alt="" class="jokla-logo">
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="admindashboard.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Stats & Report</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="paymentsandfees.html">
+					<i class='bx bxs-data' ></i>
+					<span class="text">Payments & Fees</span>
+				</a>
+			</li>
+			<li>
+				<a href="adminproducts.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Products</span>
+				</a>
+			</li>
+			<li>
+				<a href="adminposts.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Posts</span>
+				</a>
+			</li>
+			<li>
+				<a href="adminusers.html">
+					<i class='bx bx-edit-alt'></i>
+					<span class="text">Users</span>
+				</a>
+			</li>
+			<li>
+				<a href="adminusersmanagement.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Users Management</span>
+				</a>
+			</li>
+			<li>
+				<a href="adminaccounttype.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Account Type</span>
+				</a>
+			</li>
+			<li>
+				<a href="adminallorders.html">
+					<i class='bx bxs-share-alt'></i>
+					<span class="text">All Orders</span>
+				</a>
+			</li>
+			<li>
+				<a href="adminchatmanagement.html">
+					<i class='bx bxs-comment-dots'></i>
+					<span class="text">Chat Management</span>
+				</a>
+			</li>
+			<li>
+				<a href="adminsettingsdashboard.html">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+    <!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<!-- <input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label> -->
+			
+			<a href="#" class="profile">
+				<img src="../img/aloop.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+        <main>
+            
+			<div class="head-title">
+				<div class="left">
+					<h1>Payments & Fees</h1>
+					
+				</div>
+				
+				<div class="dashboard__filters">
+					
+					<select id="ver-todos">
+						<option value="todos">Last 30 days</option>
+						<option value="ativos">Last 3 months</option>
+						<option value="inativos">Last Year</option>
+						<option value="inativos">All Time</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="dashboard-data">
+				<div class="dashboard-data-col1">
+					<div class="salesgraphic-box">
+                        <h3>Top 5 Categories</h3>
+						<canvas id="myChart"></canvas>
+					</div>
+				</div>
+				<div class="dashboard-data-col2">
+					<div class="totaltransactions-box">
+						<div class="text-box">
+							<img src="../img/bar-chart.png" width="27px" height="27px">
+						</div>
+						<div class="text-box">
+							<h3>€ 1,278,540.97</h3>
+							<p>Total Transactions</p>
+						</div>
+					</div>
+					<div class="paymentsoffees-box">
+						<div class="text-box">
+							<img src="../img/dollar-symbol.png" width="27px" height="27px">
+						</div>
+						<div class="text-box">
+							<h3>€ 23,913.60</h3>
+							<p>Payments Of Fees</p>
+						</div>
+					</div>
+				
+					<div class="premiumsubscriptions-box">
+						<div class="text-box">
+							<img src="../../img/checked.png" width="27px" height="27px">
+						</div>
+						<div class="text-box">
+							<h3>€ 1,990.00</h3>
+							<p>Premium Subscriptions</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <div class="adminmoredetails-payments-fees">
+                <div class="purchases-by-buyer">
+                    <h3>Purchases By Buyer</h3>
+                    <div class="payments-fees-details">
+                        <div>
+                            <img src="../img/checked.png" alt="">
+                            <h5>Buyer 1</h5>
+                        </div>
+                        <p>€ 40,985.00</p>
+                    </div>
+                    <div class="payments-fees-details">
+                        <div>
+                            <img src="../img/checked.png" alt="">
+                            <h5>Buyer 2</h5>
+                        </div>
+                        <p>€ 30,985.00</p>
+                    </div>
+                    <div class="payments-fees-details">
+                        <div>
+                            <img src="../img/checked.png" alt="">
+                            <h5>Buyer 3</h5>
+                        </div>
+                        <p>€ 20,985.00</p>
+                    </div>
+                    <div class="payments-fees-details">
+                        <div>
+                            <img src="../img/checked.png" alt="">
+                            <h5>Buyer 4</h5>
+                        </div>
+                        <p>€ 10,985.00</p>
+                    </div>
+                    <div class="payments-fees-details">
+                        <div>
+                            <img src="../img/checked.png" alt="">
+                            <h5>Buyer 5</h5>
+                        </div>
+                        <p>€ 7,985.00</p>
+                    </div>
+                </div>
+
+                <div class="fees-by-supplier">
+                    <h3>Fees By Supplier</h3>
+                    <div class="payments-fees-details">
+                        <div>
+                            <img src="../img/checked.png" alt="">
+                            <h5>Supplier 1</h5>
+                        </div>
+                        
+                        <p>987 Visits</p>
+                    </div>
+                    <div class="payments-fees-details">
+                        <div>
+                            <img src="../img/checked.png" alt="">
+                            <h5>Supplier 2</h5>
+                        </div>
+                       
+                        <p>987 Visits</p>
+                    </div>
+                    <div class="payments-fees-details">
+                        <div>
+                            <img src="../img/checked.png" alt="">
+                            <h5>Supplier 3</h5>
+                        </div>
+                        
+                        <p>987 Visits</p>
+                    </div>
+                    <div class="payments-fees-details">
+                        <div>
+                            <img src="../img/checked.png" alt="">
+                            <h5>Supplier 4</h5>
+                        </div>
+                        
+                        <p>987 Visits</p>
+                    </div>
+                    <div class="payments-fees-details">
+                        <div>
+                            <img src="../img/checked.png" alt="">
+                            <h5>Supplier 5</h5>
+                        </div>
+                        
+                        <p>987 Visits</p>
+                    </div>
+                </div>
+            </div>
+
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+    <script src="../supplier-dashboard/supplierdashboard.js"></script>
+	
+	
+</body>
+</html>
